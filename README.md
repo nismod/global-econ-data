@@ -9,12 +9,12 @@ The covered topics and corresponding data sets are :
 ### Boundaries
 
 Reference global boundary data sets that are widely used as the standard country shapes.
-* [Boundaries](https://github.com/ischlo/global-econ-data/blob/main/notebooks/boundaries.ipynb)
+* [Boundaries](https://github.com/ischlo/global-econ-data/blob/main/notebooks/boundaries.ipynb){:target="_blank"}
 
 ### Industry
 
-* [Mining](https://github.com/ischlo/global-econ-data/blob/main/notebooks/mining_vis.ipynb)
-* [Cement](https://github.com/ischlo/global-econ-data/blob/main/notebooks/cement_vis.ipynb)
+* [Mining](https://github.com/ischlo/global-econ-data/blob/main/notebooks/mining_vis.ipynb){:target="_blank"}
+* [Cement](https://github.com/ischlo/global-econ-data/blob/main/notebooks/cement_vis.ipynb){:target="_blank"}
 
 ### Energy 
 
