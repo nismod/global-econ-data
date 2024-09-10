@@ -31,6 +31,7 @@ Reference global boundary data sets that are widely used as the standard country
 A combination of data sets has been done in order to get a global economic activity data set expressed as GDP/GRP produced at the finest spatial resolution available. The DOSE data set at ADMIN1 resolution has been combined with WDI at ADMIN0 resolution for 3 sectors: *manufacturing*, *services*, *agriculture*. The methodology is in the notebook: 
 
 * [Combined DOSE-WDI methodology](https://github.com/ischlo/global-econ-data/blob/main/notebooks/missing_countries.ipynb)
+* [Combined data adding geometries](https://github.com/ischlo/global-econ-data/blob/main/notebooks/missing_countries_geo.ipynb)
 
 ## Running locally
 
