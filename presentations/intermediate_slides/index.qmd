@@ -1,0 +1,191 @@
+---
+title: "Intermediate slides : downscaling methods and applications"
+author: "Ivann Schlosser"
+format: 
+    # revealjs:
+    #     theme: ["./pres_style.scss",default]
+    pdf : default
+    # beamer
+---
+
+## Methods
+
+Refer to the previous presentation for more details and background : [interpolating global economic activity data](https://ischlo.github.io/presentations/down_scaling)
+
+> Linking aggregated economic activity indicators to precise locations
+
+### Main approach so far
+
+::::: columns
+::: column
+
+#### Top-Bottom
+
+Putting together granular spatial layers with coarse output layers.
+:::
+
+::: column
+#### Bottom-Up
+
+Putting together granular spatial and output layers.
+
+:::
+:::::
+
+::::: columns
+
+::: column
+
+$\rightarrow$ Downscaling
+
+:::
+
+::: column
+
+$\rightarrow$ Aggregation
+
+:::
+
+:::::
+<!-- end columns -->
+
+#### Meeting in between
+
+Example with GHSL N-RES layer and GDP for services and manufacturing sectors. Using a Land Use / Land Suitability (LU/LS) approach with uniform rescaling.
+
+::: { #fig_downscale layout-ncol=3 }
+
+![Low](img/gridded_zoom-5.png)
+
+![Intermediate](img/gridded_zoom-3.png)
+
+![High](img/gridded_zoom.png)
+
+:::
+
+## Analysis of sources
+
+::: {.columns}
+::: {.column}
+
+### General observations on data sets
+
+-   Data sets that contain explicit economic activity indicators, or variables that can be mapped directly into them, with a spatial extent. (ex: DOSE, WDI, GEM)
+    -   Aggregated : high level aggregation by space (ADMIN1, NUTS3) and type of activity (ISIC Section)
+    -   Sector specific : good spatial precision (Point, Polygon outline of site) and activity type (ISIC Group-Class)
+-   Represent predictor layers for where activity is taking place and what kind of activity it is. (ex: GHSL non-res, MAPSPAM, OSM POIs)
+    -   Aggregated space : Activity type is precisely known (ISIC Class), spatial precision is reasonable (ex: MAPSPAM raster 10,100,1000m)
+    -   Aggregated sector : Spatial precision is reasonable, activity type is aggregated to ISIC Section-Division (ex: GHSL non-res raster 10,100,1000m, night-time light)
+    -   Precise location and type : good spatial precision and category that can be mapped into ISIC Group-Class (ex : Overture/OSM POIs)
+
+:::
+::: {.column}
+
+### Economic activity
+
+![Source : *DOI: 10.18356/8722852c-en*](img/isic_ex.png){fig-align="center" width="50%"}
+
+### Essentially
+
+![](img/meta_data.png){fig-align="center" width="50%"}
+
+:::
+:::
+ <!-- end columns -->
+
+## Looking at Overture/OSM categories
+
+> OSM/Overture tags : pairs of key $\sim$ value to categorise features. ex: key=amenities, value=restaurant
+
+An analysis is required to map the OSM/Overture tagging logic onto a more formal economic activity calssification (ISIC code) $\rightarrow$ Language Models (LM) ?
+
+### LM test
+
+Vector embedding between the *Overture* and *ISIC* matched with cosine similarity.
+
+```{python}
+# | eval: false
+# | include: true
+# | echo: true
+# Load the Sentence-BERT model
+model = SentenceTransformer("all-MiniLM-L6-v2")
+poi_embedding = model.encode(poi_category)
+embeddings = list(isic_df["embedding"])
+similarities = cosine_similarity([poi_embedding], embeddings)[0]
+```
+
+|   | raw_cat | isic_embed | isic_descr | match_score | ... |
+|---------:|-----------:|---------:|--------------------:|---------:|----------|
+| 1420 | business_advertising | 731 | Advertising | 0.90575 |  |
+| 550 | sports_and_recreation_venue | 93 | Sports activities and amusement and recreation... | 0.677504 |  |
+| 168 | restaurant | 561 | Restaurants and mobile food service activities | 0.730215 |  |
+| 1844 | construction_services | F | Construction | 0.698869 |  |
+| 675 | college_university | 853 | Higher education | 0.661763 |  |
+| 1382 | business_manufacturing_and_supply | C | Manufacturing | 0.752664 |  |
+| ... |  |  |  |  |  |
+
+## Overture data
+
+With associated ISIC code description
+
+![](img/places_isic.png){ fig-align="center" width="70%" }
+
+## Putting together sources
+
+Similarly, data sets can be matched with corresponding economic activity classifications.
+
+Extract from [global-spatial-economics-datasets](https://unioxfordnexus.sharepoint.com/:x:/r/sites/Geography-JimHallsgroup-CCGinternal/Shared%20Documents/CCG%20internal/Spatial%20economics/global-spatial-economics-datasets.xlsx?d=wd8dd68b43c8a442e9c20f6b32e6b07fb&csf=1&web=1&e=oBgGFH)
+
+| ISIC covered | Data set | ... |
+|-----------|---------------------------------------------------|-----------|
+|  | GHSL - Global Human Settlement Layers |  |
+| A,B-G,H-U | DOSE – Global data set of reported sub-national economic output |  |
+|  | Gridded global datasets for Gross Domestic Product and Human Development Index over 1990–2015 |  |
+| A014 | Global distribution data for cattle, buffaloes, horses, sheep, goats, pigs, chickens and ducks in 2010 |  |
+| D3510 | A Global Database of Power Plants |  |
+| C2394 | Global database of cement production assets and upstream |  |
+| ... |  |  |
+
+
+
+## Maps : Categories
+
+::: {.columns}
+::: {.column width="80%"}
+
+![](img/places_types.png)
+
+:::
+::: {.column width="20%" layout-valign="center"}
+
+
+![](img/box.png)
+
+![](img/legend_types.png){width="80%"}
+
+:::
+::: 
+<!-- end columns -->
+
+## Maps : Density 
+
+::: {.columns}
+::: {.column width="80%"}
+
+![](img/places_count.png)
+
+:::
+::: {.column width="20%"}
+
+![](img/box.png)
+
+:::
+:::
+ <!-- end columns -->
+
+
+
+
+
+
+
