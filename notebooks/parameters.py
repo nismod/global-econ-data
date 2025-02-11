@@ -7,6 +7,10 @@ import os
 year = 2015
 
 # print(Path.cwd())
+# https://www.btelligent.com/en/blog/best-practice-working-with-paths-in-python-part-1-2
+# https://www.pythoncheatsheet.org/cheatsheet/file-directory-path
+# https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
+# https://realpython.com/python-pathlib/
 print(Path(os.getcwd()).resolve())
 
 

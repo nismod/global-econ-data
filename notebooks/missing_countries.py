@@ -1,9 +1,55 @@
 #!/usr/bin/env python
 # coding: utf-8
 
-# # This notebook aims to fill the gaps from the DOSE data set
+# # This file covers the gap filling of the DOSE data set
 # 
 # It uses the UN WDI, and the complementary set of countries from DOSE. 
+
+# ### Missing data in DOSE
+# And remedy
+# 
+# - Missing population : find local pop statistics
+# - Whole country missing : Use WDI data
+# - Some regions are missing for a country : find local econ data
+# - Some sectors are missing for a region
+#   - 1 sector : substract from total the other 2.
+#   - 2 sectors : take WDI proportions
+#   - 3 sectors : take WDI proportions
+#   - Total : not considered
+# 
+
+# For a selected year of interest
+# 
+# ### Outline of the steps
+# 
+# Possible steps of a snakemake workflow
+# 
+# [Country representation](country_repr) : 
+#     Determine the completeness of the ADMIN1 coverage in DOSE. Take the proportion of present ADMIN1 level units compared to a reference. Find the missing countries.
+# 
+# [Missing regions](missing_reg) :
+#     All the missing regions and those for which countries are partially represented in DOSE
+# 
+# [WDI](wdi) : 
+#     Manufacturing in DOSE is linked to industry in WDI
+#     The relevant variables from here are Agriculture, Manufacturing and Services proportions of GDP. Adding Venezuala manually from the CIA factbook.
+# 
+# [Missing population](missing_pop):
+#     A subset of regions have missing population data in DOSE. Filling them from local stat offices where available or the citypopulation.de portal.
+# 
+# [Combining the two sources](combining):
+#     The two tables are concatenated. 
+# 
+# [Complementary fill](comp_fill) (row-wise/horizontal): 
+#     We have GDP = agriculture + manufacturing + services. If any single value of the rhs is missing, we can find it. If lhs is missing, we can sum rhs.
+# 
+# [Partially missing regions](partial_miss):
+#     Not yet fully solved as things tend not to add up properly. WIP
+# 
+# 
+# 
+
+# ***
 
 # In[1]:
 
@@ -15,7 +61,9 @@ import itertools as iter
 import numpy as np
 import os
 from random import sample
+from pathlib import Path
 
+from matplotlib import pyplot as plt
 # data
 
 import pandas as pd
@@ -28,19 +76,12 @@ from scalenav.oop import sn_connect
 from parameters import year,missing_frac
 
 
-
-# In[ ]:
+# In[2]:
 
 
 # The duckdb/ibis way require to either create an in-memory database at the moment of execution of the notebook, or saving the database in a file. 
 conn = sn_connect()
 conn.list_tables() # empty
-
-
-# In[ ]:
-
-
-type(conn)
 
 
 # ### Enter A YEAR OF INTEREST IN parameters.py
@@ -49,10 +90,23 @@ type(conn)
 # 
 # With **ibis**
 
+# In[3]:
+
+
+Path.cwd()
+print(Path(os.getcwd()))
+
+
+# In[ ]:
+
+
+dose_file = "../datasets/DOSE/V2.10/DOSE_V2.10.csv"
+
+
 # In[4]:
 
 
-dose = conn.read_csv("../datasets/DOSE/V2.10/DOSE_V2.10.csv",table_name="dose",all_varchar = True)
+dose = conn.read_csv(dose_file,table_name="dose",all_varchar = True)
 
 
 # In[5]:
@@ -67,7 +121,7 @@ wdi = conn.read_csv("../datasets/WDI_CSV_2024_06_28/WDICSV.csv",table_name="wdi"
 # the merged file
 # local path with folder where the downloaded shapefiles are stored 
 # (both GADM and the custom one)
-gadm_path = '../datasets/DOSE/DOSE_replication_files/DOSE_replication_files/Data/spatial data/' # ../../../../../
+gadm_path = '../datasets/DOSE/V2/DOSE_replication_files/DOSE_replication_files/Data/spatial data/' # ../../../../../
 
 # Read shapefiles
 file_name = "gadm36_1"
@@ -77,7 +131,7 @@ file_name = "gadm36_1"
 # has to be downloaded from https://gadm.org/download_world36.html; follow instructions in readme
 
 
-# In[ ]:
+# In[7]:
 
 
 # ../datasets/boundaries/GADM/gadm_410.gpkg
@@ -96,7 +150,7 @@ boundaries = conn.table("boundaries")
 boundaries = boundaries.rename("snake_case")
 
 
-# In[ ]:
+# In[10]:
 
 
 boundary_countries = conn.sql("Select distinct(gid_0) from boundaries;").to_pandas().iloc[:,0].to_list()
@@ -124,14 +178,14 @@ dose = dose.rename("snake_case")
 wdi_countries = np.unique(wdi.country_code.__array__()).tolist()
 
 
-# In[ ]:
+# In[21]:
 
 
 dose_countries = dose.filter(_.year==str(year)).gid_0.to_pandas().unique().tolist()
 dose_countries[0:5]
 
 
-# ## Country representation
+# ## [Country representation](#country_repr)
 
 # In[23]:
 
@@ -167,13 +221,13 @@ bound_complete = (
 )
 
 
-# In[ ]:
+# In[26]:
 
 
 bound_complete.count()
 
 
-# In[ ]:
+# In[27]:
 
 
 bound_complete.head(10)
@@ -185,7 +239,7 @@ bound_complete.head(10)
 bound_complete_df = bound_complete.execute()
 
 
-# In[ ]:
+# In[29]:
 
 
 # missing values are dropped here when executing, leaving only the indices of countries that are in both but the representation is less than 1
@@ -195,7 +249,7 @@ incomplete_countries_year = bound_complete.filter(_.repr_frac<1).gid_0_bound.exe
 len(incomplete_countries_year)
 
 
-# In[ ]:
+# In[30]:
 
 
 incomplete_countries_year[0:5]
@@ -207,19 +261,19 @@ incomplete_countries_year[0:5]
 missing_countries_year = bound_complete.filter(_.gid_0_count_dose==0).gid_0_bound.execute().to_list()
 
 
-# In[ ]:
+# In[32]:
 
 
 len(missing_countries_year)
 
 
-# In[ ]:
+# In[33]:
 
 
 missing_countries_year[0:5]
 
 
-# ## Missing regions
+# ## [Missing regions](#missing_reg)
 # Determining the missing regions from DOSE using the 3 letter country codes compared to the equivalent variable in WDI indicators
 
 # In[34]:
@@ -242,13 +296,13 @@ dose_regions = (
 )
 
 
-# In[ ]:
+# In[36]:
 
 
 dose_regions[0:5]
 
 
-# In[ ]:
+# In[37]:
 
 
 len(dose_regions)
@@ -278,7 +332,7 @@ missing_regions = [x for x in bound_regions if x not in dose_regions]
 full_missing_regions_df = pd.DataFrame([x.split(".") for x in missing_regions],columns=["country","region"])
 
 
-# In[ ]:
+# In[42]:
 
 
 full_missing_regions_df
@@ -290,24 +344,24 @@ full_missing_regions_df
 dose_missing_regions = full_missing_regions_df.loc[full_missing_regions_df.country.isin(incomplete_countries_year)].reset_index(drop=True)
 
 
-# In[ ]:
+# In[44]:
 
 
 dose_missing_regions
 
 
-# ### WDI of interest
+# ### [WDI of interest](#wdi)
 # 
 # getting the variables of interest from the WDI index for the missing countries in the DOSE data set.
 
-# In[ ]:
+# In[46]:
 
 
 # should not be null
 wdi.filter(_.country_code.isin(incomplete_countries_year)).order_by("country_name").head(5)
 
 
-# In[ ]:
+# In[47]:
 
 
 indicators = wdi.indicator_name.to_pandas().unique().tolist()
@@ -378,7 +432,7 @@ wdi_df = wdi_of_interest.filter(_.country_code.isin(missing_countries_year)).to_
 
 # ### Manually adding Venezuela
 
-# In[ ]:
+# In[55]:
 
 
 # filling available values for Venzuela from other sources.
@@ -446,7 +500,7 @@ wdi_df_var.columns = [x[1] if x[1]!='' else x[0] for x in wdi_df_var.columns]
 wdi_df_var.columns = [x.replace("industry", "manufacturing") if re.search(string=x,pattern="industry_") else x for x in wdi_df_var.columns]
 
 
-# In[ ]:
+# In[67]:
 
 
 # without 'manufacturing' it makes more sense:
@@ -488,7 +542,7 @@ dose_year[float_cols] = dose_year[float_cols].astype(float)
 gdp_thres = 1.1
 
 
-# In[ ]:
+# In[78]:
 
 
 #  IN NORMAL LCU
@@ -510,7 +564,7 @@ print("When converting to absolute values : ",dose_year[((dose_year["manufacturi
 print("In pc values : ", dose_year[((dose_year["man_grp_pc_lcu_2015"]+dose_year["serv_grp_pc_lcu_2015"]+dose_year["ag_grp_pc_lcu_2015"])/dose_year["grp_pc_lcu_2015"])>gdp_thres].shape[0])
 
 
-# In[ ]:
+# In[79]:
 
 
 # #  IN LCU2015_USD whatever it means
@@ -529,10 +583,10 @@ print("When converting to absolute values : ",dose_year[((dose_year["manufacturi
 print("In pc values : ", dose_year[((dose_year["man_grp_pc_lcu2015_usd"]+dose_year["serv_grp_pc_lcu2015_usd"]+dose_year["ag_grp_pc_lcu2015_usd"])/dose_year["grp_pc_lcu2015_usd"])>gdp_thres].shape[0])
 
 
-# ## Filling population gaps in DOSE
+# ## [Filling population gaps in DOSE](#missing_pop)
 # The missing *population* values generates missing values when converting from per capita values back into absolute values.
-# #### Converting per capita into absolute values with the population variable.
 # 
+# #### Converting per capita into absolute values with the population variable.
 
 # In[82]:
 
@@ -610,7 +664,7 @@ missing_pop.reset_index(inplace=True,drop=False)
 
 # Argentina
 missing_pop.loc[missing_pop.region=="Neuquen","pop"] = 744_592 # statista : https://www.statista.com/statistics/1413909/population-by-group-age-gender-neuquen-argentina
-missing_pop.loc[missing_pop.region=="Tucuman","pop"] = 1.593e6 # wiki
+missing_pop.loc[missing_pop.region=="Tucuman","pop"] = 1_593_000 # wiki
 
 # Brasil
 missing_pop.loc[missing_pop.region=="Mato Grosso Do Sul","pop"] = 2_833_742 # https://www.britannica.com/place/Mato-Grosso-do-Sul
@@ -752,7 +806,7 @@ wdi_df_var.dropna(subset=["grp_usd_2015"],inplace=True)
 wdi_country_simple = wdi_df_var.loc[:,~wdi_df_var.columns.isin(["gdp_cap"])]
 
 
-# ## Combining 
+# ## [Combining](#combining)
 # Using the fact that columns are named the same.
 
 # #### The column names should match
@@ -814,7 +868,7 @@ wdi_df_full.columns = [x.replace("industry", "manufacturing") if re.search(strin
 dose_missing_df = wdi_df_full.loc[wdi_df_full.country_code.isin(incomplete_dose)].copy()
 
 
-# In[ ]:
+# In[115]:
 
 
 # should not be empty
@@ -898,7 +952,7 @@ dose_light = dose_light.drop(columns=["country_code",*[x for x in dose_light.col
 dose_light_combined = pd.concat([dose_light,wdi_country_simple],axis=0).reset_index(drop=True)
 
 
-# In[ ]:
+# In[137]:
 
 
 print("Data to this point: ",dose_light_combined.shape)
@@ -906,7 +960,7 @@ print("Full row of NAs removed: ", dose_light_combined.dropna(axis=0,how="all").
 print("Some missing economic indicator removed: ", dose_light_combined.dropna(subset=["grp_usd_2015","services_usd_2015","manufacturing_usd_2015","agriculture_usd_2015"],axis=0,how="any").shape)
 
 
-# ## Complementary filling
+# ## [Complementary filling](#comp_fill)
 # 
 # We have GDP = agriculture + manufacturing + services. If any single value of the rhs is missing, we can find it. If lhs is missing, we can sum rhs.
 # 
@@ -939,7 +993,7 @@ def check_and_fill_row(row: pd.Series):
 dose_light_combined[dose_light_combined.isna().any(axis=1)] = dose_light_combined[dose_light_combined.isna().any(axis=1)].apply(check_and_fill_row,axis=1)
 
 
-# In[ ]:
+# In[141]:
 
 
 print("Data to this point: ",dose_light_combined.shape)
@@ -955,19 +1009,19 @@ dose_light_combined.dropna(subset=["grp_usd_2015","services_usd_2015","manufactu
 dose_light_combined.reset_index(inplace=True,drop=True)
 
 
-# ## Countries with missing regions
+# ## [Countries with missing regions](#partial_miss)
 # 
 # In some cases, not all the regions in a country covered by DOSE are provided. This case has not been treated yet. The process here is to distribute the remainder of gdp across the 3 sectors uniformly to the missing regions. This is again a first order approximation. And whenever better data is obtained can be ameliorated.
 # We rely on the table computed earlier containing incomplete country regions. 
 # 
 
-# In[ ]:
+# In[146]:
 
 
 dose_missing_regions
 
 
-# In[ ]:
+# In[147]:
 
 
 incomplete_countries = dose_missing_regions.country.unique()
@@ -980,7 +1034,7 @@ incomplete_countries
 wdi_incomplete = wdi_df_full[wdi_df_full.country_code.isin(incomplete_countries)].groupby("country_code").sum(numeric_only=True)
 
 
-# In[ ]:
+# In[149]:
 
 
 wdi_incomplete.head()
@@ -992,7 +1046,7 @@ wdi_incomplete.head()
 dose_incomplete = dose_light_combined[dose_light_combined.gid_0.isin(incomplete_countries)].assign(count=1).groupby("gid_0").sum(numeric_only=True)
 
 
-# In[ ]:
+# In[151]:
 
 
 dose_incomplete.head()
@@ -1010,34 +1064,38 @@ incomplete_values = (wdi_incomplete - dose_incomplete)
 incomplete_values.drop(columns=["count","gdp_cap"],inplace=True)
 
 
-# In[ ]:
+# In[154]:
 
 
 incomplete_values
 
 
-# In[ ]:
+# In[155]:
 
 
 incomplete_values.grp_usd_2015.hist()
+plt.show()
 
 
-# In[ ]:
+# In[156]:
 
 
 incomplete_values.manufacturing_usd_2015.hist()
+plt.show()
 
 
-# In[ ]:
+# In[157]:
 
 
 incomplete_values.services_usd_2015.hist()
+plt.show()
 
 
-# In[ ]:
+# In[158]:
 
 
 incomplete_values.agriculture_usd_2015.hist()
+plt.show()
 
 
 # ## Validations
@@ -1045,12 +1103,12 @@ incomplete_values.agriculture_usd_2015.hist()
 
 # ## Saving the combined file.
 
-# In[ ]:
+# In[170]:
 
 
 import os
 
-version = "0_3"
+version = "0_4"
 
 dir_name = f"../datasets/local_data/dose-wdi/"
 
@@ -1058,7 +1116,7 @@ filename_dose_light = f"{dir_name}{version}/dose_light_combined_{year}_{version}
 filename_dose_light
 
 
-# In[ ]:
+# In[171]:
 
 
 if not os.path.exists(f"{dir_name}{version}"):
@@ -1080,7 +1138,7 @@ else:
 # 
 # testing the duckdb h3 extension to potentially transfer all the projection on the db side for better performance.
 
-# In[ ]:
+# In[183]:
 
 
 conn.sql("SELECT h3_cell_to_latlng('822d57fffffffff');")

@@ -10,7 +10,7 @@
 # 
 # Reading in the data set that is generated from *missing_countries.ipynb*
 
-# In[174]:
+# In[1]:
 
 
 import json
@@ -27,6 +27,9 @@ import ibis as ib
 from ibis import _
 ib.options.interactive = True
 
+import scalenav.oop as snoo
+from scalenav.plotting import cmap
+
 from parameters import year
 
 # plots
@@ -37,24 +40,15 @@ from seaborn import color_palette
 from matplotlib import pyplot as plt
 
 
-# In[15]:
+# In[2]:
 
 
 # ddb.connect()
-conn = ib.connect('duckdb://')
+conn = snoo.sn_connect()
 conn.list_tables() # empty
 
 
-# In[16]:
-
-
-# load boundaries data set directly into duckdb
-# load extension first
-
-res = conn.raw_sql("""INSTALL spatial;LOAD spatial;""")
-
-
-# In[17]:
+# In[3]:
 
 
 # the merged file
@@ -62,23 +56,24 @@ res = conn.raw_sql("""INSTALL spatial;LOAD spatial;""")
 #local path with folder where the downloaded shapefiles are stored 
 #(both GADM and the custom one)
 
-gadm_path = '../datasets/DOSE/DOSE_replication_files/DOSE_replication_files/Data/spatial data/' # ../../../../../
+gadm_path = '../datasets/DOSE/V2/DOSE_replication_files/DOSE_replication_files/Data/spatial data/' # ../../../../../
 
 # Read shapefiles
 
 file_name = "gadm36_1"
 
 
-# In[19]:
+# In[4]:
 
 
 #Export merged geodataframe into shapefile
 
-out_path = "../datasets/DOSE/" # ../../../../../
+out_path = "../datasets/DOSE/V2/" # ../../../../../
 
 dose_spatial_file = f"{out_path}{file_name}_custom_merged.parquet"
 
 if not os.path.exists(dose_spatial_file):
+    print("reading existing file")
     gadm = gpd.read_file(gadm_path+"gadm36_levels_shp/" + file_name+".shp")
     # has to be downloaded from https://gadm.org/download_world36.html; follow instructions in readme
 
@@ -102,7 +97,7 @@ if not os.path.exists(dose_spatial_file):
 # adm1 = gpd.read_file("../datasets/DOSE/DOSE_replication_files/DOSE_replication_files/Data/spatial data/gadm_410-levels.gpkg",layer="ADM_1")
 
 
-# In[20]:
+# In[5]:
 
 
 geoboundaries_file = '"../datasets/boundaries/GeoBoundaries/geoBoundariesCGAZ_ADM1.gpkg"'
@@ -111,7 +106,7 @@ gadm_file =  '"../datasets/boundaries/GADM/gadm_410.gpkg"'
 conn.raw_sql(f"""CREATE OR REPLACE TABLE boundaries AS SELECT * FROM '{dose_spatial_file}';""")
 
 
-# In[21]:
+# In[6]:
 
 
 # link the table from the duckdb, this is not performed by the previous operation
@@ -119,7 +114,7 @@ boundaries = conn.table("boundaries")
 # boundaries
 
 
-# In[22]:
+# In[7]:
 
 
 # wb_countries = gpd.read_file("datasets/boundaries/WB_countries_Admin0_10m/WB_countries_Admin0_10m.shp")
@@ -128,19 +123,20 @@ boundaries = conn.table("boundaries")
 # ### Reading the local dose-WDI data set
 # 
 
-# In[23]:
+# In[8]:
 
 
 dose_wdi_path = "../datasets/local_data/dose-wdi/"
 # latest
-version = "0_3"
+# version = "0_3"
+from missing_countries import version
 
 dose_light = conn.read_csv(source_list=f"{dose_wdi_path}{version}/dose_light_combined_{year}_{version}.csv",table_name="dose_light")
 
 
 # ### Preparing the data
 
-# In[24]:
+# In[9]:
 
 
 # nice function from ibis
@@ -148,14 +144,14 @@ boundaries = boundaries.rename("snake_case")
 dose_light = dose_light.rename("snake_case")
 
 
-# In[25]:
+# In[10]:
 
 
 boundary_countries = conn.sql("Select distinct(gid_1) from boundaries;").to_pandas().iloc[:,0].to_list()
 len(boundary_countries)
 
 
-# In[27]:
+# In[12]:
 
 
 def head_rand(conn: ib.backends.duckdb.Backend, table: str, limit:[int,str]=5):
@@ -165,7 +161,7 @@ def head_rand(conn: ib.backends.duckdb.Backend, table: str, limit:[int,str]=5):
     return conn.sql(query=query)
 
 
-# In[30]:
+# In[15]:
 
 
 # subsetting the boundaries data:
@@ -175,24 +171,24 @@ boundary_columns = [str(x).lower() for x in boundary_columns]
 boundaries = boundaries.select(boundary_columns)
 
 
-# In[35]:
+# In[18]:
 
 
 boundaries_1 = conn.sql("""select * EXCLUDE (geometry)
-                        , ST_Centroid(ST_GeomFromWKB(geometry)) as centr
-                        , ST_GeomFromWKB(geometry) as geometry 
+                        , ST_Centroid(geometry::GEOMETRY) as centr
+                        , geometry::GEOMETRY as geometry 
                         from boundaries;""")
 
 
 # ### Working only on centroids
 
-# In[38]:
+# In[21]:
 
 
 boundaries_centr = boundaries_1.rename("snake_case").execute()
 
 
-# In[39]:
+# In[22]:
 
 
 # regions to merge with DOSE
@@ -208,13 +204,13 @@ boundaries_1_centr = boundaries_1_centr.astype({"gid_1":str})
 # boundaries_1_centr.dtypes
 
 
-# In[40]:
+# In[23]:
 
 
 gadm_gid_0_filename = f"{out_path}gadm_gid_0.parquet"
 
 
-# In[41]:
+# In[24]:
 
 
 if not os.path.exists(gadm_gid_0_filename):
@@ -224,8 +220,8 @@ if not os.path.exists(gadm_gid_0_filename):
             ST_Union_Agg(geometry) as geometry 
             from 
                 (select * EXCLUDE (geometry)
-                            , ST_Centroid(ST_GeomFromWKB(geometry)) as centr
-                            , ST_GeomFromWKB(geometry) as geometry 
+                            , ST_Centroid(geometry::GEOMETRY) as centr
+                            , geometry::GEOMETRY as geometry 
                             from boundaries) 
             GROUP BY gid_0;""").execute() # boundaries_1
     
@@ -233,19 +229,19 @@ if not os.path.exists(gadm_gid_0_filename):
     boundaries_0_centr.to_parquet(gadm_gid_0_filename)
 
 
-# In[42]:
+# In[25]:
 
 
 boundaries_0_centr = gpd.read_parquet(gadm_gid_0_filename)
 
 
-# In[43]:
+# In[26]:
 
 
 boundaries_0_centr.columns = [x.lower() for x in boundaries_0_centr.columns]
 
 
-# In[44]:
+# In[27]:
 
 
 # boundaries_0_centr = boundaries_centr[["gid_0","geometry"]].set_geometry("geometry").set_crs(epsg=4326).dissolve(by="gid_0")
@@ -258,63 +254,63 @@ boundaries_0_centr = boundaries_0_centr.astype({"gid_0":str})
 # boundaries_0_centr.dtypes
 
 
-# In[47]:
+# In[29]:
 
 
 dose_light_geo_ = dose_light.execute()
 
 
-# In[49]:
+# In[30]:
 
 
 dose_light_geo_ = dose_light_geo_.astype({"gid_1" : str})
 
 
-# In[50]:
+# In[31]:
 
 
 dose_light_geo_[dose_light_geo_.gid_1=="LAO"]
 
 
-# In[51]:
+# In[33]:
 
 
 # boundaries_1_centr.dtypes
 
 
-# In[52]:
+# In[32]:
 
 
 dose_light_geo = gpd.GeoDataFrame(dose_light_geo_.merge(boundaries_1_centr[["gid_1","centr","geometry"]],on="gid_1",how="left"))
 
 
-# In[54]:
+# In[34]:
 
 
 missing_geoms = dose_light_geo.centr.isna()
 
 
-# In[55]:
+# In[36]:
 
 
 missing_countries = dose_light_geo_.loc[missing_geoms,"gid_0"].to_list()
 
 
-# In[57]:
+# In[ ]:
 
 
 boundaries_0_centr_missing = boundaries_0_centr[boundaries_0_centr.gid_0.isin(missing_countries)].set_index("gid_0")
 dose_light_geo.set_index("gid_0",inplace=True)
 
 
-# In[59]:
+# In[42]:
 
 
 dose_light_geo.loc[missing_countries,["centr","geometry"]] = boundaries_0_centr_missing[["centr","geometry"]]
 dose_light_geo.reset_index(inplace=True,drop=False)
 
 
-# In[60]:
+# In[43]:
 
 
 # dose_light_geo.set_geometry("geometry",inplace=True).set_crs(epsg=4326,inplace=True)
@@ -326,16 +322,20 @@ dose_light_geo.set_crs(epsg=4326,inplace=True)
 
 # ### Exporting
 
-# In[ ]:
+# In[44]:
 
 
 dose_light_geo = dose_light_geo.set_geometry("geometry")
 dose_light_geo["x"]=dose_light_geo.centr.x
 dose_light_geo["y"]=dose_light_geo.centr.y
 
+
+# In[52]:
+
+
 # contains some missing bits. 
-dose_wdi_geo_filename = "dose_wdi_geo"
-dose_wdi_geo_filepath = "../datasets/local_data/dose-wdi/"+dose_wdi_geo_filename+".parquet"
+dose_wdi_geo_filename = f"dose_wdi_geo_{version}"
+dose_wdi_geo_filepath = f"../datasets/local_data/dose-wdi/{version}/{dose_wdi_geo_filename}.parquet"
 
 if not os.path.exists(dose_wdi_geo_filepath):
     dose_light_geo.to_parquet(dose_wdi_geo_filepath)
@@ -350,24 +350,6 @@ else :
 # #### Deck map
 
 # ### Other maps:
-
-# In[ ]:
-
-
-get_ipython().system(' jupyter nbconvert missing_countries_geo.ipynb --TagRemovePreprocessor.enabled=True --TagRemovePreprocessor.remove_cell_tags rm_cell --to python')
-
-
-# In[ ]:
-
-
-## Datashader tests 
-
-
-# In[143]:
-
-
-# ! export DASK_DATAFRAME__QUERY_PLANNING=False
-
 
 # In[144]:
 
