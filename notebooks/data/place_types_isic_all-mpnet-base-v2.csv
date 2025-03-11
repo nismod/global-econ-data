@@ -1,0 +1,801 @@
+main_cat,sec_cat,raw_cat,section,isic_embed,isic_descr,dose,match_score
+eat_and_drink,eat_and_drink,eat_and_drink,Q,86,Human health activities,services,0.26407650113105774
+eat_and_drink,restaurant,restaurant,I,56,Food and beverage service activities,services,0.45932355523109436
+eat_and_drink,bar,bar,R,92,Gambling and betting activities,services,0.2504656910896301
+eat_and_drink,cafe,cafe,I,56,Food and beverage service activities,services,0.3438059389591217
+accommodation,accommodation,accommodation,I,55,Accommodation,services,0.43691498041152954
+accommodation,bed_and_breakfast,bed_and_breakfast,C,31,Manufacture of furniture,manufacturing,0.34134534001350403
+accommodation,cabin,cabin,C,31,Manufacture of furniture,manufacturing,0.28590697050094604
+accommodation,campground,campground,I,55,Accommodation,services,0.442442387342453
+accommodation,cottage,cottage,C,31,Manufacture of furniture,manufacturing,0.3036311864852905
+accommodation,guest_house,guest_house,I,55,Accommodation,services,0.3735901415348053
+accommodation,health_retreats,health_retreats,Q,86,Human health activities,services,0.43842464685440063
+accommodation,holiday_rental_home,holiday_rental_home,N,77,Rental and leasing activities,services,0.39542874693870544
+accommodation,hostel,hostel,I,55,Accommodation,services,0.2874944508075714
+accommodation,hotel,hotel,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.31978148221969604
+accommodation,inn,inn,I,55,Accommodation,services,0.2508334815502167
+accommodation,lodge,lodge,R,92,Gambling and betting activities,services,0.1839679777622223
+accommodation,motel,motel,I,55,Accommodation,services,0.2930336892604828
+accommodation,mountain_huts,mountain_huts,I,55,Accommodation,services,0.3412369191646576
+accommodation,resort,resort,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.2886270582675934
+accommodation,rv_park,rv_park,I,55,Accommodation,services,0.41278743743896484
+accommodation,service_apartments,service_apartments,N,77,Rental and leasing activities,services,0.5114606618881226
+automotive,automotive,automotive,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4468802213668823
+automotive,automotive_dealer,automotive_dealer,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4850107431411743
+automotive,car_buyer,car_buyer,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4477718472480774
+automotive,automotive_services_and_repair,automotive_services_and_repair,C,33,Repair and installation of machinery and equipment,manufacturing,0.576976478099823
+automotive,motorsport_vehicle_repair,motorsport_vehicle_repair,C,33,Repair and installation of machinery and equipment,manufacturing,0.43952158093452454
+automotive,automotive_parts_and_accessories,automotive_parts_and_accessories,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.5768754482269287
+automotive,aircraft_dealer,aircraft_dealer,H,51,Air transport,services,0.3844878673553467
+automotive,aircraft_services_and_repair,aircraft_services_and_repair,C,33,Repair and installation of machinery and equipment,manufacturing,0.5414667725563049
+automotive,aircraft_parts_and_supplies,aircraft_parts_and_supplies,C,33,Repair and installation of machinery and equipment,manufacturing,0.484190434217453
+automotive,boat_dealer,boat_dealer,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.3747701942920685
+automotive,boat_service_and_repair,boat_service_and_repair,S,95,Repair of computers and personal and household goods,services,0.5577304363250732
+automotive,boat_parts_and_accessories,boat_parts_and_accessories,C,30,Manufacture of other transport equipment,manufacturing,0.5080587267875671
+automotive,gas_station,gas_station,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.31181928515434265
+automotive,electric_vehicle_charging_station,electric_vehicle_charging_station,C,27,Manufacture of electrical equipment,manufacturing,0.3042408227920532
+automotive,truck_stop,truck_stop,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.2962411344051361
+automotive,automobile_leasing,automobile_leasing,N,77,Rental and leasing activities,services,0.5891537666320801
+automotive,automotive_repair,automotive_repair,C,33,Repair and installation of machinery and equipment,manufacturing,0.5964133143424988
+automotive,auto_company,auto_company,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4636014997959137
+automotive,motorcycle_manufacturer,motorcycle_manufacturer,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4556051194667816
+arts_and_entertainment,arts_and_entertainment,arts_and_entertainment,R,90,"Creative, arts and entertainment activities",services,0.7204711437225342
+arts_and_entertainment,adult_entertainment,adult_entertainment,R,90,"Creative, arts and entertainment activities",services,0.4680144190788269
+arts_and_entertainment,arcade,arcade,R,93,Sports activities and amusement and recreation activities,services,0.2885025441646576
+arts_and_entertainment,auditorium,auditorium,R,90,"Creative, arts and entertainment activities",services,0.2459292858839035
+arts_and_entertainment,bar_crawl,bar_crawl,S,94,Activities of membership organizations,services,0.25692546367645264
+arts_and_entertainment,betting_center,betting_center,R,92,Gambling and betting activities,services,0.5988175272941589
+arts_and_entertainment,bingo_hall,bingo_hall,R,92,Gambling and betting activities,services,0.364197313785553
+arts_and_entertainment,bookmakers,bookmakers,R,92,Gambling and betting activities,services,0.5292305946350098
+arts_and_entertainment,cabaret,cabaret,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.21240438520908356
+arts_and_entertainment,carousel,carousel,R,90,"Creative, arts and entertainment activities",services,0.23370477557182312
+arts_and_entertainment,casino,casino,R,92,Gambling and betting activities,services,0.4625226855278015
+arts_and_entertainment,chamber_of_handicraft,chamber_of_handicraft,C,32,Other manufacturing,manufacturing,0.5311926603317261
+arts_and_entertainment,choir,choir,R,90,"Creative, arts and entertainment activities",services,0.2530968189239502
+arts_and_entertainment,circus,circus,R,93,Sports activities and amusement and recreation activities,services,0.3583371043205261
+arts_and_entertainment,club_crawl,club_crawl,S,94,Activities of membership organizations,services,0.3109636902809143
+arts_and_entertainment,comedy_club,comedy_club,R,90,"Creative, arts and entertainment activities",services,0.29774391651153564
+arts_and_entertainment,topic_concert_venue,topic_concert_venue,R,93,Sports activities and amusement and recreation activities,services,0.3155527114868164
+arts_and_entertainment,country_club,country_club,R,93,Sports activities and amusement and recreation activities,services,0.2776029109954834
+arts_and_entertainment,country_dance_hall,country_dance_hall,R,91,"Libraries, archives, museums and other cultural activities",services,0.23039162158966064
+arts_and_entertainment,dance_club,dance_club,R,90,"Creative, arts and entertainment activities",services,0.27418410778045654
+arts_and_entertainment,dinner_theater,dinner_theater,I,56,Food and beverage service activities,services,0.26724526286125183
+arts_and_entertainment,eatertainment,eatertainment,I,56,Food and beverage service activities,services,0.47595295310020447
+arts_and_entertainment,escape_rooms,escape_rooms,Q,88,Social work activities without accommodation,services,0.25487443804740906
+arts_and_entertainment,exhibition_and_trade_center,exhibition_and_trade_center,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.3404969573020935
+arts_and_entertainment,glass_blowing,glass_blowing,C,31,Manufacture of furniture,manufacturing,0.21989743411540985
+arts_and_entertainment,indoor_playcenter,indoor_playcenter,R,93,Sports activities and amusement and recreation activities,services,0.36187130212783813
+arts_and_entertainment,internet_cafe,internet_cafe,J,63,Information service activities,services,0.37976914644241333
+arts_and_entertainment,jazz_and_blues,jazz_and_blues,R,90,"Creative, arts and entertainment activities",services,0.28549230098724365
+arts_and_entertainment,karaoke,karaoke,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.3162026107311249
+arts_and_entertainment,laser_tag,laser_tag,S,95,Repair of computers and personal and household goods,services,0.2278667390346527
+arts_and_entertainment,makerspace,makerspace,C,31,Manufacture of furniture,manufacturing,0.3113611936569214
+arts_and_entertainment,marching_band,marching_band,S,94,Activities of membership organizations,services,0.24951718747615814
+arts_and_entertainment,music_venue,music_venue,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.312933087348938
+arts_and_entertainment,musical_band_orchestras_and_symphonies,musical_band_orchestras_and_symphonies,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.25153401494026184
+arts_and_entertainment,opera_and_ballet,opera_and_ballet,R,90,"Creative, arts and entertainment activities",services,0.32314589619636536
+arts_and_entertainment,paint_and_sip,paint_and_sip,R,90,"Creative, arts and entertainment activities",services,0.2639668583869934
+arts_and_entertainment,paintball,paintball,R,93,Sports activities and amusement and recreation activities,services,0.2942188084125519
+arts_and_entertainment,performing_arts,performing_arts,R,90,"Creative, arts and entertainment activities",services,0.5232402086257935
+arts_and_entertainment,planetarium,planetarium,R,91,"Libraries, archives, museums and other cultural activities",services,0.35109251737594604
+arts_and_entertainment,rodeo,rodeo,R,92,Gambling and betting activities,services,0.2516553997993469
+arts_and_entertainment,salsa_club,salsa_club,S,94,Activities of membership organizations,services,0.21773572266101837
+arts_and_entertainment,wildlife_sanctuary,wildlife_sanctuary,R,91,"Libraries, archives, museums and other cultural activities",services,0.47524550557136536
+arts_and_entertainment,stadium_arena,stadium_arena,R,93,Sports activities and amusement and recreation activities,services,0.29783833026885986
+arts_and_entertainment,studio_taping,studio_taping,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.4132833182811737
+arts_and_entertainment,theaters_and_performance_venues,theaters_and_performance_venues,R,90,"Creative, arts and entertainment activities",services,0.40649330615997314
+arts_and_entertainment,ticket_sales,ticket_sales,R,92,Gambling and betting activities,services,0.3980706036090851
+arts_and_entertainment,virtual_reality_center,virtual_reality_center,R,90,"Creative, arts and entertainment activities",services,0.24555182456970215
+arts_and_entertainment,water_park,water_park,R,93,Sports activities and amusement and recreation activities,services,0.39761996269226074
+arts_and_entertainment,cinema,cinema,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.36993783712387085
+arts_and_entertainment,farm,farm,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.44401347637176514
+arts_and_entertainment,festival,festival,R,90,"Creative, arts and entertainment activities",services,0.3434450328350067
+arts_and_entertainment,social_club,social_club,S,94,Activities of membership organizations,services,0.3273898959159851
+arts_and_entertainment,supernatural_reading,supernatural_reading,R,90,"Creative, arts and entertainment activities",services,0.1485225111246109
+attractions_and_activities,attractions_and_activities,attractions_and_activities,R,91,"Libraries, archives, museums and other cultural activities",services,0.6320856809616089
+attractions_and_activities,amusement_park,amusement_park,R,93,Sports activities and amusement and recreation activities,services,0.49828967452049255
+attractions_and_activities,aquarium,aquarium,A,03,Fishing and aquaculture,agriculture,0.35453370213508606
+attractions_and_activities,architecture,architecture,F,41,Construction of buildings,manufacturing,0.6345392465591431
+attractions_and_activities,art_gallery,art_gallery,R,90,"Creative, arts and entertainment activities",services,0.42436331510543823
+attractions_and_activities,atv_rentals_and_tours,atv_rentals_and_tours,N,77,Rental and leasing activities,services,0.3898274898529053
+attractions_and_activities,axe_throwing,axe_throwing,A,02,Forestry and logging,agriculture,0.2038365751504898
+attractions_and_activities,backpacking_area,backpacking_area,I,55,Accommodation,services,0.399556428194046
+attractions_and_activities,beach,beach,R,93,Sports activities and amusement and recreation activities,services,0.25058484077453613
+attractions_and_activities,beach_combing_area,beach_combing_area,N,81,Services to buildings and landscape activities,services,0.33994075655937195
+attractions_and_activities,boat_rental_and_training,boat_rental_and_training,N,77,Rental and leasing activities,services,0.36080771684646606
+attractions_and_activities,boating_places,boating_places,H,50,Water transport,services,0.36478960514068604
+attractions_and_activities,bobsledding_field,bobsledding_field,R,93,Sports activities and amusement and recreation activities,services,0.37335485219955444
+attractions_and_activities,botanical_garden,botanical_garden,R,91,"Libraries, archives, museums and other cultural activities",services,0.44653624296188354
+attractions_and_activities,bungee_jumping_center,bungee_jumping_center,R,93,Sports activities and amusement and recreation activities,services,0.350887656211853
+attractions_and_activities,canyon,canyon,R,91,"Libraries, archives, museums and other cultural activities",services,0.15669909119606018
+attractions_and_activities,castle,castle,F,41,Construction of buildings,manufacturing,0.27145761251449585
+attractions_and_activities,cave,cave,E,37,Sewerage,manufacturing,0.22265681624412537
+attractions_and_activities,challenge_courses_center,challenge_courses_center,R,90,"Creative, arts and entertainment activities",services,0.37145185470581055
+attractions_and_activities,cliff_jumping_center,cliff_jumping_center,R,93,Sports activities and amusement and recreation activities,services,0.2065088450908661
+attractions_and_activities,climbing_service,climbing_service,B,09,Mining support service activities,manufacturing,0.36038482189178467
+attractions_and_activities,crater,crater,E,37,Sewerage,manufacturing,0.20749709010124207
+attractions_and_activities,cultural_center,cultural_center,R,91,"Libraries, archives, museums and other cultural activities",services,0.45316189527511597
+attractions_and_activities,fishing_charter,fishing_charter,A,03,Fishing and aquaculture,agriculture,0.3664369583129883
+attractions_and_activities,flyboarding_rental,flyboarding_rental,N,77,Rental and leasing activities,services,0.32885634899139404
+attractions_and_activities,fort,fort,E,37,Sewerage,manufacturing,0.2205638289451599
+attractions_and_activities,fountain,fountain,E,37,Sewerage,manufacturing,0.33411166071891785
+attractions_and_activities,go_kart_track,go_kart_track,R,93,Sports activities and amusement and recreation activities,services,0.3031981587409973
+attractions_and_activities,haunted_house,haunted_house,E,37,Sewerage,manufacturing,0.18428587913513184
+attractions_and_activities,high_gliding_center,high_gliding_center,R,93,Sports activities and amusement and recreation activities,services,0.16404147446155548
+attractions_and_activities,horseback_riding_service,horseback_riding_service,S,96,Other personal service activities,services,0.41137585043907166
+attractions_and_activities,hot_air_balloons_tour,hot_air_balloons_tour,H,51,Air transport,services,0.27735182642936707
+attractions_and_activities,hot_springs,hot_springs,E,36,"Water collection, treatment and supply",manufacturing,0.27348706126213074
+attractions_and_activities,jet_skis_rental,jet_skis_rental,N,77,Rental and leasing activities,services,0.3383901119232178
+attractions_and_activities,kiteboarding_instruction,kiteboarding_instruction,R,93,Sports activities and amusement and recreation activities,services,0.283092737197876
+attractions_and_activities,lake,lake,E,36,"Water collection, treatment and supply",manufacturing,0.3163367807865143
+attractions_and_activities,landmark_and_historical_building,landmark_and_historical_building,R,91,"Libraries, archives, museums and other cultural activities",services,0.5520835518836975
+attractions_and_activities,lighthouse,lighthouse,F,41,Construction of buildings,manufacturing,0.1898733377456665
+attractions_and_activities,lookout,lookout,N,80,Security and investigation activities,services,0.2279946655035019
+attractions_and_activities,marina,marina,E,37,Sewerage,manufacturing,0.28488558530807495
+attractions_and_activities,monument,monument,R,91,"Libraries, archives, museums and other cultural activities",services,0.34624457359313965
+attractions_and_activities,mountain_bike_parks,mountain_bike_parks,R,93,Sports activities and amusement and recreation activities,services,0.3139735162258148
+attractions_and_activities,observatory,observatory,R,91,"Libraries, archives, museums and other cultural activities",services,0.3158586621284485
+attractions_and_activities,paddleboard_rental,paddleboard_rental,N,77,Rental and leasing activities,services,0.37161844968795776
+attractions_and_activities,palace,palace,E,37,Sewerage,manufacturing,0.23170892894268036
+attractions_and_activities,parasailing_ride_service,parasailing_ride_service,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.38635268807411194
+attractions_and_activities,plaza,plaza,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.24927642941474915
+attractions_and_activities,rafting_kayaking_area,rafting_kayaking_area,R,93,Sports activities and amusement and recreation activities,services,0.2433217465877533
+attractions_and_activities,rock_climbing_spot,rock_climbing_spot,I,55,Accommodation,services,0.2471655011177063
+attractions_and_activities,ruin,ruin,E,37,Sewerage,manufacturing,0.37706005573272705
+attractions_and_activities,sailing_area,sailing_area,H,50,Water transport,services,0.38215041160583496
+attractions_and_activities,sand_dune,sand_dune,E,37,Sewerage,manufacturing,0.22947637736797333
+attractions_and_activities,scavenger_hunts_provider,scavenger_hunts_provider,N,81,Services to buildings and landscape activities,services,0.23525787889957428
+attractions_and_activities,sculpture_statue,sculpture_statue,C,23,Manufacture of other non-metallic mineral products,manufacturing,0.21723347902297974
+attractions_and_activities,ski_area,ski_area,R,93,Sports activities and amusement and recreation activities,services,0.301948219537735
+attractions_and_activities,skyline,skyline,F,41,Construction of buildings,manufacturing,0.2403261512517929
+attractions_and_activities,sledding_rental,sledding_rental,N,77,Rental and leasing activities,services,0.319279283285141
+attractions_and_activities,snorkeling_equipment_rental,snorkeling_equipment_rental,N,77,Rental and leasing activities,services,0.276905357837677
+attractions_and_activities,snorkeling,snorkeling,R,93,Sports activities and amusement and recreation activities,services,0.31637436151504517
+attractions_and_activities,snowboarding_center,snowboarding_center,R,93,Sports activities and amusement and recreation activities,services,0.2995415925979614
+attractions_and_activities,stargazing_area,stargazing_area,N,81,Services to buildings and landscape activities,services,0.23319512605667114
+attractions_and_activities,street_art,street_art,R,90,"Creative, arts and entertainment activities",services,0.355125367641449
+attractions_and_activities,trail,trail,R,93,Sports activities and amusement and recreation activities,services,0.23853790760040283
+attractions_and_activities,waterfall,waterfall,E,36,"Water collection, treatment and supply",manufacturing,0.3382084369659424
+attractions_and_activities,surfing,surfing,R,92,Gambling and betting activities,services,0.29305770993232727
+attractions_and_activities,ziplining_center,ziplining_center,R,93,Sports activities and amusement and recreation activities,services,0.31487059593200684
+attractions_and_activities,zoo,zoo,R,91,"Libraries, archives, museums and other cultural activities",services,0.3407433032989502
+attractions_and_activities,museum,museum,R,91,"Libraries, archives, museums and other cultural activities",services,0.4556879699230194
+attractions_and_activities,park,park,R,93,Sports activities and amusement and recreation activities,services,0.31963878870010376
+active_life,active_life,active_life,R,90,"Creative, arts and entertainment activities",services,0.35502272844314575
+active_life,sports_and_recreation_venue,sports_and_recreation_venue,R,93,Sports activities and amusement and recreation activities,services,0.6101269125938416
+active_life,sports_and_fitness_instruction,sports_and_fitness_instruction,R,93,Sports activities and amusement and recreation activities,services,0.5144870281219482
+active_life,sports_club_and_league,sports_club_and_league,R,93,Sports activities and amusement and recreation activities,services,0.4270395040512085
+active_life,sports_and_recreation_rental_and_services,sports_and_recreation_rental_and_services,R,93,Sports activities and amusement and recreation activities,services,0.6494553685188293
+beauty_and_spa,beauty_and_spa,beauty_and_spa,N,81,Services to buildings and landscape activities,services,0.3417631983757019
+beauty_and_spa,aromatherapy,aromatherapy,S,96,Other personal service activities,services,0.2783834636211395
+beauty_and_spa,beauty_salon,beauty_salon,S,96,Other personal service activities,services,0.3962634801864624
+beauty_and_spa,acne_treatment,acne_treatment,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.22390718758106232
+beauty_and_spa,barber,barber,S,96,Other personal service activities,services,0.2233951985836029
+beauty_and_spa,eyebrow_service,eyebrow_service,S,96,Other personal service activities,services,0.27803105115890503
+beauty_and_spa,eyelash_service,eyelash_service,S,96,Other personal service activities,services,0.3053746819496155
+beauty_and_spa,foot_care,foot_care,C,15,Manufacture of leather and related products,manufacturing,0.28661471605300903
+beauty_and_spa,hair_extensions,hair_extensions,C,15,Manufacture of leather and related products,manufacturing,0.19457793235778809
+beauty_and_spa,hair_loss_center,hair_loss_center,Q,87,Residential care activities,services,0.21089790761470795
+beauty_and_spa,hair_replacement,hair_replacement,S,95,Repair of computers and personal and household goods,services,0.21498990058898926
+beauty_and_spa,health_spa,health_spa,Q,86,Human health activities,services,0.320277601480484
+beauty_and_spa,makeup_artist,makeup_artist,C,15,Manufacture of leather and related products,manufacturing,0.23162201046943665
+beauty_and_spa,massage,massage,S,96,Other personal service activities,services,0.2443975806236267
+beauty_and_spa,nail_salon,nail_salon,S,96,Other personal service activities,services,0.3597458600997925
+beauty_and_spa,onsen,onsen,E,37,Sewerage,manufacturing,0.12594081461429596
+beauty_and_spa,permanent_makeup,permanent_makeup,C,15,Manufacture of leather and related products,manufacturing,0.20445546507835388
+beauty_and_spa,tattoo_and_piercing,tattoo_and_piercing,C,32,Other manufacturing,manufacturing,0.2683521509170532
+beauty_and_spa,public_bath_houses,public_bath_houses,E,37,Sewerage,manufacturing,0.38654625415802
+beauty_and_spa,teeth_whitening,teeth_whitening,Q,86,Human health activities,services,0.20449170470237732
+beauty_and_spa,turkish_baths,turkish_baths,E,36,"Water collection, treatment and supply",manufacturing,0.27326399087905884
+beauty_and_spa,hair_removal,hair_removal,S,96,Other personal service activities,services,0.20943769812583923
+beauty_and_spa,hair_salon,hair_salon,S,96,Other personal service activities,services,0.3676709532737732
+beauty_and_spa,spas,spas,S,96,Other personal service activities,services,0.34432879090309143
+beauty_and_spa,skin_care,skin_care,S,96,Other personal service activities,services,0.355305016040802
+beauty_and_spa,tanning_salon,tanning_salon,C,15,Manufacture of leather and related products,manufacturing,0.2961573600769043
+beauty_and_spa,image_consultant,image_consultant,M,74,"Other professional, scientific and technical activities",services,0.24619421362876892
+education,education,education,P,85,Education,services,0.4707649350166321
+education,adult_education,adult_education,P,85,Education,services,0.4386972188949585
+education,board_of_education_offices,board_of_education_offices,P,85,Education,services,0.44151413440704346
+education,campus_building,campus_building,F,41,Construction of buildings,manufacturing,0.40409475564956665
+education,college_counseling,college_counseling,Q,87,Residential care activities,services,0.2592684328556061
+education,college_university,college_university,P,85,Education,services,0.23833858966827393
+education,educational_research_institute,educational_research_institute,P,85,Education,services,0.43791234493255615
+education,educational_services,educational_services,P,85,Education,services,0.5450011491775513
+education,educational_camp,educational_camp,P,85,Education,services,0.41790133714675903
+education,private_tutor,private_tutor,P,85,Education,services,0.20494447648525238
+education,school,school,P,85,Education,services,0.3785665035247803
+education,school_district_offices,school_district_offices,P,85,Education,services,0.4350817799568176
+education,specialty_school,specialty_school,P,85,Education,services,0.36966294050216675
+education,student_union,student_union,S,94,Activities of membership organizations,services,0.35773348808288574
+education,tasting_classes,tasting_classes,C,10,Manufacture of food products,manufacturing,0.26063188910484314
+education,test_preparation,test_preparation,Q,86,Human health activities,services,0.3189443349838257
+education,tutoring_center,tutoring_center,P,85,Education,services,0.34548234939575195
+financial_service,financial_service,financial_service,K,64,"Financial service activities, except insurance and pension funding",services,0.6390527486801147
+financial_service,accountant,accountant,M,69,Legal and accounting activities,services,0.42276763916015625
+financial_service,atms,atms,K,64,"Financial service activities, except insurance and pension funding",services,0.419088214635849
+financial_service,bank_credit_union,bank_credit_union,K,64,"Financial service activities, except insurance and pension funding",services,0.35732096433639526
+financial_service,brokers,brokers,K,66,Activities auxiliary to financial service and insurance activities,services,0.4082525372505188
+financial_service,business_banking_service,business_banking_service,K,64,"Financial service activities, except insurance and pension funding",services,0.5151590704917908
+financial_service,business_financing,business_financing,K,64,"Financial service activities, except insurance and pension funding",services,0.46628764271736145
+financial_service,check_cashing_payday_loans,check_cashing_payday_loans,K,64,"Financial service activities, except insurance and pension funding",services,0.3725464344024658
+financial_service,coin_dealers,coin_dealers,R,92,Gambling and betting activities,services,0.3247131407260895
+financial_service,collection_agencies,collection_agencies,K,64,"Financial service activities, except insurance and pension funding",services,0.2887742221355438
+financial_service,credit_and_debt_counseling,credit_and_debt_counseling,K,64,"Financial service activities, except insurance and pension funding",services,0.25325143337249756
+financial_service,currency_exchange,currency_exchange,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.36548760533332825
+financial_service,debt_relief_services,debt_relief_services,K,64,"Financial service activities, except insurance and pension funding",services,0.41710442304611206
+financial_service,financial_advising,financial_advising,K,64,"Financial service activities, except insurance and pension funding",services,0.42022863030433655
+financial_service,holding_companies,holding_companies,K,64,"Financial service activities, except insurance and pension funding",services,0.3762049674987793
+financial_service,investment_management_company,investment_management_company,M,70,Activities of head offices; management consultancy activities,services,0.40017881989479065
+financial_service,installment_loans,installment_loans,K,64,"Financial service activities, except insurance and pension funding",services,0.3468143343925476
+financial_service,insurance_agency,insurance_agency,K,66,Activities auxiliary to financial service and insurance activities,services,0.4560004472732544
+financial_service,investing,investing,R,92,Gambling and betting activities,services,0.37509825825691223
+financial_service,money_transfer_services,money_transfer_services,K,64,"Financial service activities, except insurance and pension funding",services,0.40292754769325256
+financial_service,tax_services,tax_services,M,69,Legal and accounting activities,services,0.4753655195236206
+financial_service,trusts,trusts,K,64,"Financial service activities, except insurance and pension funding",services,0.27356278896331787
+private_establishments_and_corporates,private_establishments_and_corporates,private_establishments_and_corporates,T,98,Undifferentiated goods- and services-producing activities of private households for own use,services,0.40233471989631653
+private_establishments_and_corporates,corporate_entertainment_services,corporate_entertainment_services,N,82,"Office administrative, office support and other business support activities",services,0.4707963764667511
+private_establishments_and_corporates,corporate_gift_supplier,corporate_gift_supplier,S,95,Repair of computers and personal and household goods,services,0.3039901554584503
+private_establishments_and_corporates,corporate_office,corporate_office,N,82,"Office administrative, office support and other business support activities",services,0.43326252698898315
+private_establishments_and_corporates,private_equity_firm,private_equity_firm,K,64,"Financial service activities, except insurance and pension funding",services,0.32956475019454956
+retail,retail,retail,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.4939951002597809
+retail,food,food,C,10,Manufacture of food products,manufacturing,0.38303342461586
+retail,auto_parts_and_supply_store,auto_parts_and_supply_store,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.5113306641578674
+retail,beverage_store,beverage_store,C,11,Manufacture of beverages,manufacturing,0.40428438782691956
+retail,boat_parts_and_supply_store,boat_parts_and_supply_store,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4316486716270447
+retail,carpet_store,carpet_store,C,31,Manufacture of furniture,manufacturing,0.3764965236186981
+retail,distillery,distillery,C,11,Manufacture of beverages,manufacturing,0.4216587245464325
+retail,drugstore,drugstore,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.35818421840667725
+retail,flooring_store,flooring_store,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.3371540904045105
+retail,health_market,health_market,Q,86,Human health activities,services,0.4350579082965851
+retail,hearing_aid_provider,hearing_aid_provider,S,95,Repair of computers and personal and household goods,services,0.29241299629211426
+retail,herb_and_spice_shop,herb_and_spice_shop,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.3805406987667084
+retail,honey_farm_shop,honey_farm_shop,C,32,Other manufacturing,manufacturing,0.3576635718345642
+retail,meat_shop,meat_shop,C,10,Manufacture of food products,manufacturing,0.23600301146507263
+retail,olive_oil,olive_oil,C,10,Manufacture of food products,manufacturing,0.2316870242357254
+retail,party_supply,party_supply,I,56,Food and beverage service activities,services,0.34686362743377686
+retail,pharmacy,pharmacy,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.5046517848968506
+retail,popcorn_shop,popcorn_shop,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.2518361806869507
+retail,seafood_market,seafood_market,A,03,Fishing and aquaculture,agriculture,0.38721367716789246
+retail,water_store,water_store,E,36,"Water collection, treatment and supply",manufacturing,0.48144495487213135
+retail,shopping,shopping,G,47,"Retail trade, except of motor vehicles and motorcycles",services,0.47710737586021423
+retail,tire_shop,tire_shop,C,22,Manufacture of rubber and plastics products,manufacturing,0.4234005808830261
+health_and_medical,health_and_medical,health_and_medical,Q,86,Human health activities,services,0.6411254405975342
+health_and_medical,abuse_and_addiction_treatment,abuse_and_addiction_treatment,Q,87,Residential care activities,services,0.34409627318382263
+health_and_medical,counseling_and_mental_health,counseling_and_mental_health,Q,87,Residential care activities,services,0.3353348672389984
+health_and_medical,dental_hygienist,dental_hygienist,Q,86,Human health activities,services,0.43524205684661865
+health_and_medical,dentist,dentist,Q,86,Human health activities,services,0.3467325270175934
+health_and_medical,diagnostic_services,diagnostic_services,S,95,Repair of computers and personal and household goods,services,0.4807659089565277
+health_and_medical,doctor,doctor,Q,86,Human health activities,services,0.33691883087158203
+health_and_medical,abortion_clinic,abortion_clinic,Q,86,Human health activities,services,0.31501153111457825
+health_and_medical,acupuncture,acupuncture,Q,86,Human health activities,services,0.1828261911869049
+health_and_medical,aesthetician,aesthetician,F,41,Construction of buildings,manufacturing,0.2937338054180145
+health_and_medical,alcohol_and_drug_treatment_center,alcohol_and_drug_treatment_center,Q,87,Residential care activities,services,0.3790309429168701
+health_and_medical,alternative_medicine,alternative_medicine,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.3045564293861389
+health_and_medical,ambulance_and_ems_services,ambulance_and_ems_services,M,75,Veterinary activities,services,0.4415004253387451
+health_and_medical,animal_assisted_therapy,animal_assisted_therapy,M,75,Veterinary activities,services,0.5277629494667053
+health_and_medical,assisted_living_facility,assisted_living_facility,Q,87,Residential care activities,services,0.47036200761795044
+health_and_medical,ayurveda,ayurveda,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.24189427495002747
+health_and_medical,behavior_analyst,behavior_analyst,N,80,Security and investigation activities,services,0.3335258960723877
+health_and_medical,blood_and_plasma_donation_center,blood_and_plasma_donation_center,Q,86,Human health activities,services,0.2987860441207886
+health_and_medical,body_contouring,body_contouring,Q,86,Human health activities,services,0.19986318051815033
+health_and_medical,cancer_treatment_center,cancer_treatment_center,Q,87,Residential care activities,services,0.33206555247306824
+health_and_medical,cannabis_clinic,cannabis_clinic,Q,86,Human health activities,services,0.3341488838195801
+health_and_medical,cannabis_collective,cannabis_collective,C,12,Manufacture of tobacco products,manufacturing,0.28077927231788635
+health_and_medical,childrens_hospital,childrens_hospital,Q,86,Human health activities,services,0.33707523345947266
+health_and_medical,chiropractor,chiropractor,Q,86,Human health activities,services,0.20993509888648987
+health_and_medical,colonics,colonics,E,37,Sewerage,manufacturing,0.36154597997665405
+health_and_medical,community_health_center,community_health_center,Q,86,Human health activities,services,0.466738224029541
+health_and_medical,concierge_medicine,concierge_medicine,Q,86,Human health activities,services,0.4400307834148407
+health_and_medical,cryotherapy,cryotherapy,M,75,Veterinary activities,services,0.16403089463710785
+health_and_medical,dialysis_clinic,dialysis_clinic,Q,86,Human health activities,services,0.3566228151321411
+health_and_medical,dietitian,dietitian,C,10,Manufacture of food products,manufacturing,0.2941363453865051
+health_and_medical,doula,doula,O,84,Public administration and defence; compulsory social security,services,0.1576450914144516
+health_and_medical,emergency_room,emergency_room,Q,86,Human health activities,services,0.33347469568252563
+health_and_medical,environmental_medicine,environmental_medicine,Q,86,Human health activities,services,0.49652689695358276
+health_and_medical,eye_care_clinic,eye_care_clinic,Q,86,Human health activities,services,0.3529069423675537
+health_and_medical,float_spa,float_spa,E,36,"Water collection, treatment and supply",manufacturing,0.27820998430252075
+health_and_medical,halfway_house,halfway_house,Q,87,Residential care activities,services,0.2647525668144226
+health_and_medical,halotherapy,halotherapy,Q,86,Human health activities,services,0.2453133761882782
+health_and_medical,health_and_wellness_club,health_and_wellness_club,Q,86,Human health activities,services,0.36485278606414795
+health_and_medical,health_coach,health_coach,Q,86,Human health activities,services,0.3585817813873291
+health_and_medical,health_department,health_department,Q,86,Human health activities,services,0.5256719589233398
+health_and_medical,health_insurance_office,health_insurance_office,Q,86,Human health activities,services,0.4131263494491577
+health_and_medical,hospice,hospice,Q,87,Residential care activities,services,0.29790711402893066
+health_and_medical,hospital,hospital,Q,86,Human health activities,services,0.4224092960357666
+health_and_medical,hydrotherapy,hydrotherapy,E,36,"Water collection, treatment and supply",manufacturing,0.3240889012813568
+health_and_medical,hypnosis_hypnotherapy,hypnosis_hypnotherapy,Q,86,Human health activities,services,0.25582921504974365
+health_and_medical,iv_hydration,iv_hydration,E,36,"Water collection, treatment and supply",manufacturing,0.2953641414642334
+health_and_medical,lactation_services,lactation_services,S,96,Other personal service activities,services,0.39350345730781555
+health_and_medical,laser_eye_surgery_lasik,laser_eye_surgery_lasik,S,95,Repair of computers and personal and household goods,services,0.19030466675758362
+health_and_medical,lice_treatment,lice_treatment,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.18494416773319244
+health_and_medical,massage_therapy,massage_therapy,S,96,Other personal service activities,services,0.3199179172515869
+health_and_medical,maternity_centers,maternity_centers,Q,86,Human health activities,services,0.4098255932331085
+health_and_medical,medical_cannabis_referral,medical_cannabis_referral,Q,87,Residential care activities,services,0.31188541650772095
+health_and_medical,medical_service_organizations,medical_service_organizations,Q,86,Human health activities,services,0.4579760432243347
+health_and_medical,medical_transportation,medical_transportation,H,52,Warehousing and support activities for transportation,services,0.46307238936424255
+health_and_medical,memory_care,memory_care,Q,87,Residential care activities,services,0.2814885377883911
+health_and_medical,midwife,midwife,C,32,Other manufacturing,manufacturing,0.26034268736839294
+health_and_medical,nurse_practitioner,nurse_practitioner,S,96,Other personal service activities,services,0.31478673219680786
+health_and_medical,nutritionist,nutritionist,C,10,Manufacture of food products,manufacturing,0.3661801815032959
+health_and_medical,occupational_medicine,occupational_medicine,Q,86,Human health activities,services,0.5387953519821167
+health_and_medical,occupational_therapy,occupational_therapy,S,96,Other personal service activities,services,0.4468929171562195
+health_and_medical,optometrist,optometrist,C,26,"Manufacture of computer, electronic and optical products",manufacturing,0.26528018712997437
+health_and_medical,organ_and_tissue_donor_service,organ_and_tissue_donor_service,M,75,Veterinary activities,services,0.3697529435157776
+health_and_medical,orthotics,orthotics,S,95,Repair of computers and personal and household goods,services,0.272741436958313
+health_and_medical,oxygen_bar,oxygen_bar,E,37,Sewerage,manufacturing,0.17543332278728485
+health_and_medical,paternity_tests_and_services,paternity_tests_and_services,Q,86,Human health activities,services,0.1809609979391098
+health_and_medical,physical_therapy,physical_therapy,Q,86,Human health activities,services,0.3366394639015198
+health_and_medical,placenta_encapsulation_service,placenta_encapsulation_service,Q,86,Human health activities,services,0.2367456555366516
+health_and_medical,podiatry,podiatry,Q,86,Human health activities,services,0.32176703214645386
+health_and_medical,prenatal_perinatal_care,prenatal_perinatal_care,Q,86,Human health activities,services,0.31543874740600586
+health_and_medical,prosthetics,prosthetics,S,95,Repair of computers and personal and household goods,services,0.36057162284851074
+health_and_medical,prosthodontist,prosthodontist,M,74,"Other professional, scientific and technical activities",services,0.24824753403663635
+health_and_medical,psychomotor_therapist,psychomotor_therapist,Q,87,Residential care activities,services,0.3101365566253662
+health_and_medical,public_health_clinic,public_health_clinic,Q,86,Human health activities,services,0.5831732749938965
+health_and_medical,reflexology,reflexology,M,72,Scientific research and development,services,0.2366458773612976
+health_and_medical,reiki,reiki,Q,86,Human health activities,services,0.18210846185684204
+health_and_medical,sauna,sauna,Q,88,Social work activities without accommodation,services,0.18223392963409424
+health_and_medical,skilled_nursing,skilled_nursing,Q,87,Residential care activities,services,0.4033234715461731
+health_and_medical,sleep_specialist,sleep_specialist,S,96,Other personal service activities,services,0.23048615455627441
+health_and_medical,speech_therapist,speech_therapist,Q,87,Residential care activities,services,0.2310151904821396
+health_and_medical,sperm_clinic,sperm_clinic,E,37,Sewerage,manufacturing,0.2969800531864166
+health_and_medical,surgical_center,surgical_center,Q,86,Human health activities,services,0.45201894640922546
+health_and_medical,ultrasound_imaging_center,ultrasound_imaging_center,Q,86,Human health activities,services,0.29298222064971924
+health_and_medical,urgent_care_clinic,urgent_care_clinic,Q,86,Human health activities,services,0.3857702910900116
+health_and_medical,weight_loss_center,weight_loss_center,I,56,Food and beverage service activities,services,0.20328843593597412
+health_and_medical,wellness_program,wellness_program,Q,86,Human health activities,services,0.3567162752151489
+health_and_medical,women's_health_clinic,women's_health_clinic,Q,86,Human health activities,services,0.5123637914657593
+health_and_medical,medical_center,medical_center,Q,86,Human health activities,services,0.4627549648284912
+health_and_medical,personal_care_service,personal_care_service,S,96,Other personal service activities,services,0.5732346773147583
+health_and_medical,rehabilitation_center,rehabilitation_center,Q,87,Residential care activities,services,0.507590115070343
+health_and_medical,traditional_chinese_medicine,traditional_chinese_medicine,C,21,Manufacture of basic pharmaceutical products and pharmaceutical preparations,manufacturing,0.41707122325897217
+pets,pets,pets,M,75,Veterinary activities,services,0.37250620126724243
+pets,pet_services,pet_services,M,75,Veterinary activities,services,0.5583658218383789
+pets,animal_rescue_service,animal_rescue_service,M,75,Veterinary activities,services,0.5729779005050659
+pets,animal_shelter,animal_shelter,M,75,Veterinary activities,services,0.46483519673347473
+pets,horse_boarding,horse_boarding,R,92,Gambling and betting activities,services,0.3195180892944336
+pets,pet_adoption,pet_adoption,M,75,Veterinary activities,services,0.3172420561313629
+pets,veterinarian,veterinarian,M,75,Veterinary activities,services,0.5458437204360962
+business_to_business,business_to_business,business_to_business,G,46,"Wholesale trade, except of motor vehicles and motorcycles",services,0.4096910357475281
+business_to_business,business,business,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.42821821570396423
+business_to_business,commercial_industrial,commercial_industrial,C,28,Manufacture of machinery and equipment n.e.c.,manufacturing,0.5448713302612305
+business_to_business,b2b_agriculture_and_food,b2b_agriculture_and_food,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.5434696078300476
+business_to_business,business_manufacturing_and_supply,business_manufacturing_and_supply,C,31,Manufacture of furniture,manufacturing,0.5424880981445312
+business_to_business,b2b_medical_support_services,b2b_medical_support_services,N,82,"Office administrative, office support and other business support activities",services,0.3577929139137268
+business_to_business,b2b_science_and_technology,b2b_science_and_technology,C,26,"Manufacture of computer, electronic and optical products",manufacturing,0.39036861062049866
+business_to_business,business_advertising,business_advertising,M,73,Advertising and market research,services,0.5584548711776733
+business_to_business,business_equipment_and_supply,business_equipment_and_supply,C,33,Repair and installation of machinery and equipment,manufacturing,0.5849704742431641
+business_to_business,business_storage_and_transportation,business_storage_and_transportation,H,52,Warehousing and support activities for transportation,services,0.6136603355407715
+business_to_business,business_to_business_services,business_to_business_services,G,46,"Wholesale trade, except of motor vehicles and motorcycles",services,0.40084967017173767
+business_to_business,b2b_energy_and_mining,b2b_energy_and_mining,B,09,Mining support service activities,manufacturing,0.4648010730743408
+public_service_and_government,public_service_and_government,public_service_and_government,O,84,Public administration and defence; compulsory social security,services,0.6214861869812012
+public_service_and_government,public_utility_company,energy_company,E,36,"Water collection, treatment and supply",manufacturing,0.45394307374954224
+public_service_and_government,law_enforcement,law_enforcement,N,80,Security and investigation activities,services,0.5092754364013672
+public_service_and_government,organization,organization,S,94,Activities of membership organizations,services,0.44244080781936646
+public_service_and_government,community_services,community_services,S,96,Other personal service activities,services,0.49417340755462646
+public_service_and_government,government_services,government_services,O,84,Public administration and defence; compulsory social security,services,0.5499494075775146
+public_service_and_government,jail_and_prison,jail_and_prison,E,37,Sewerage,manufacturing,0.2558831572532654
+public_service_and_government,post_office,post_office,H,53,Postal and courier activities,services,0.4854699373245239
+public_service_and_government,public_toilet,public_toilet,E,37,Sewerage,manufacturing,0.5014466047286987
+public_service_and_government,armed_forces_branch,armed_forces_branch,S,94,Activities of membership organizations,services,0.27561211585998535
+public_service_and_government,central_government_office,central_government_office,O,84,Public administration and defence; compulsory social security,services,0.48649585247039795
+public_service_and_government,chambers_of_commerce,chambers_of_commerce,S,94,Activities of membership organizations,services,0.45439544320106506
+public_service_and_government,children_hall,children_hall,R,90,"Creative, arts and entertainment activities",services,0.29229581356048584
+public_service_and_government,civic_center,civic_center,R,91,"Libraries, archives, museums and other cultural activities",services,0.2456888109445572
+public_service_and_government,community_center,community_center,N,81,Services to buildings and landscape activities,services,0.36577409505844116
+public_service_and_government,courthouse,courthouse,M,69,Legal and accounting activities,services,0.2960261106491089
+public_service_and_government,department_of_motor_vehicles,department_of_motor_vehicles,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4022083878517151
+public_service_and_government,department_of_social_service,department_of_social_service,Q,88,Social work activities without accommodation,services,0.4695127606391907
+public_service_and_government,embassy,embassy,U,99,Activities of extraterritorial organizations and bodies,services,0.4573536217212677
+public_service_and_government,family_service_center,family_service_center,S,96,Other personal service activities,services,0.3622688353061676
+public_service_and_government,federal_government_offices,federal_government_offices,O,84,Public administration and defence; compulsory social security,services,0.4435293674468994
+public_service_and_government,fire_department,fire_department,S,95,Repair of computers and personal and household goods,services,0.35266226530075073
+public_service_and_government,immigration_and_naturalization,immigration_and_naturalization,U,99,Activities of extraterritorial organizations and bodies,services,0.39878442883491516
+public_service_and_government,library,library,R,91,"Libraries, archives, museums and other cultural activities",services,0.424575537443161
+public_service_and_government,local_and_state_government_offices,local_and_state_government_offices,O,84,Public administration and defence; compulsory social security,services,0.4264981746673584
+public_service_and_government,low_income_housing,low_income_housing,N,77,Rental and leasing activities,services,0.35615086555480957
+public_service_and_government,national_security_services,national_security_services,N,80,Security and investigation activities,services,0.5296114683151245
+public_service_and_government,office_of_vital_records,office_of_vital_records,Q,86,Human health activities,services,0.23874564468860626
+public_service_and_government,pension,pension,K,65,"Insurance, reinsurance and pension funding, except compulsory social security",services,0.47276628017425537
+public_service_and_government,police_department,police_department,N,80,Security and investigation activities,services,0.3966752290725708
+public_service_and_government,political_party_office,political_party_office,O,84,Public administration and defence; compulsory social security,services,0.36249491572380066
+public_service_and_government,railway_service,railway_service,H,49,Land transport and transport via pipelines,services,0.4674398899078369
+public_service_and_government,registry_office,registry_office,N,82,"Office administrative, office support and other business support activities",services,0.30209213495254517
+public_service_and_government,retirement_home,retirement_home,Q,87,Residential care activities,services,0.38646507263183594
+public_service_and_government,scout_hall,scout_hall,E,37,Sewerage,manufacturing,0.22696799039840698
+public_service_and_government,tax_office,tax_office,M,69,Legal and accounting activities,services,0.40870022773742676
+public_service_and_government,town_hall,town_hall,R,91,"Libraries, archives, museums and other cultural activities",services,0.29577016830444336
+public_service_and_government,unemployment_office,unemployment_office,N,78,Employment activities,services,0.4077379107475281
+public_service_and_government,weather_station,weather_station,J,60,Programming and broadcasting activities,services,0.3614453673362732
+religious_organization,religious_organization,religious_organization,S,94,Activities of membership organizations,services,0.4373120069503784
+religious_organization,church_cathedral,church_cathedral,F,41,Construction of buildings,manufacturing,0.3243713974952698
+religious_organization,mission,mission,U,99,Activities of extraterritorial organizations and bodies,services,0.22856706380844116
+religious_organization,buddhist_temple,buddhist_temple,R,91,"Libraries, archives, museums and other cultural activities",services,0.3231806457042694
+religious_organization,convents_and_monasteries,convents_and_monasteries,R,91,"Libraries, archives, museums and other cultural activities",services,0.35637760162353516
+religious_organization,hindu_temple,hindu_temple,R,91,"Libraries, archives, museums and other cultural activities",services,0.3098817467689514
+religious_organization,mosque,mosque,F,41,Construction of buildings,manufacturing,0.30440443754196167
+religious_organization,religious_destination,religious_destination,R,91,"Libraries, archives, museums and other cultural activities",services,0.34690964221954346
+religious_organization,shinto_shrines,shinto_shrines,R,91,"Libraries, archives, museums and other cultural activities",services,0.29279425740242004
+religious_organization,sikh_temple,sikh_temple,R,91,"Libraries, archives, museums and other cultural activities",services,0.28758305311203003
+religious_organization,synagogue,synagogue,S,94,Activities of membership organizations,services,0.21043731272220612
+religious_organization,temple,temple,E,37,Sewerage,manufacturing,0.19200026988983154
+real_estate,real_estate,real_estate,L,68,Real estate activities,services,0.4133777320384979
+real_estate,real_estate_investment,real_estate_investment,L,68,Real estate activities,services,0.48186245560646057
+real_estate,builders,builders,F,41,Construction of buildings,manufacturing,0.5965566635131836
+real_estate,apartments,apartments,N,77,Rental and leasing activities,services,0.4526662230491638
+real_estate,art_space_rental,art_space_rental,N,77,Rental and leasing activities,services,0.4771944284439087
+real_estate,commercial_real_estate,commercial_real_estate,L,68,Real estate activities,services,0.5168209075927734
+real_estate,condominium,condominium,N,77,Rental and leasing activities,services,0.3683161735534668
+real_estate,display_home_center,display_home_center,N,81,Services to buildings and landscape activities,services,0.157640278339386
+real_estate,estate_liquidation,estate_liquidation,L,68,Real estate activities,services,0.3476455807685852
+real_estate,holiday_park,holiday_park,R,93,Sports activities and amusement and recreation activities,services,0.2659372389316559
+real_estate,home_staging,home_staging,C,31,Manufacture of furniture,manufacturing,0.3395322263240814
+real_estate,homeowner_association,homeowner_association,L,68,Real estate activities,services,0.32553112506866455
+real_estate,housing_cooperative,housing_cooperative,N,77,Rental and leasing activities,services,0.38604027032852173
+real_estate,kitchen_incubator,kitchen_incubator,C,10,Manufacture of food products,manufacturing,0.2609114348888397
+real_estate,mobile_home_dealer,mobile_home_dealer,N,77,Rental and leasing activities,services,0.3673410415649414
+real_estate,mobile_home_park,mobile_home_park,I,55,Accommodation,services,0.3537026643753052
+real_estate,mortgage_broker,mortgage_broker,K,66,Activities auxiliary to financial service and insurance activities,services,0.3286024332046509
+real_estate,property_management,property_management,L,68,Real estate activities,services,0.556667149066925
+real_estate,shared_office_space,shared_office_space,N,77,Rental and leasing activities,services,0.35762453079223633
+real_estate,university_housing,university_housing,N,77,Rental and leasing activities,services,0.32596153020858765
+real_estate,real_estate_agent,real_estate_agent,L,68,Real estate activities,services,0.40221673250198364
+real_estate,real_estate_service,real_estate_service,L,68,Real estate activities,services,0.5659447312355042
+travel,travel,travel,H,51,Air transport,services,0.3570364713668823
+travel,airport,airport,H,51,Air transport,services,0.34419065713882446
+travel,travel_services,travel_services,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.5925638675689697
+travel,road_structures_and_services,road_structures_and_services,F,42,Civil engineering,manufacturing,0.4869081974029541
+travel,tours,tours,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.4194160997867584
+travel,transportation,transportation,H,49,Land transport and transport via pipelines,services,0.5804488062858582
+travel,agriturismo,agriturismo,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.271912157535553
+travel,airline_ticket_agency,airline_ticket_agency,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.4321097135543823
+travel,bus_ticket_agency,bus_ticket_agency,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.3996562957763672
+travel,rental_service,rental_service,N,77,Rental and leasing activities,services,0.6470763683319092
+travel,country_house,country_house,C,31,Manufacture of furniture,manufacturing,0.23615023493766785
+travel,houseboat,houseboat,C,31,Manufacture of furniture,manufacturing,0.25370049476623535
+travel,railway_ticket_agent,railway_ticket_agent,H,51,Air transport,services,0.36968955397605896
+travel,rest_stop,rest_stop,H,52,Warehousing and support activities for transportation,services,0.26998305320739746
+travel,ryokan,ryokan,C,31,Manufacture of furniture,manufacturing,0.14833587408065796
+travel,self_catering_accommodation,self_catering_accommodation,I,55,Accommodation,services,0.45351001620292664
+travel,ski_resort,ski_resort,R,93,Sports activities and amusement and recreation activities,services,0.2737470269203186
+travel,vacation_rental_agents,vacation_rental_agents,N,77,Rental and leasing activities,services,0.4369755685329437
+mass_media,mass_media,mass_media,M,73,Advertising and market research,services,0.43886977434158325
+mass_media,print_media,print_media,C,18,Printing and reproduction of recorded media,manufacturing,0.6490288376808167
+mass_media,media_critic,media_critic,J,60,Programming and broadcasting activities,services,0.29832589626312256
+mass_media,media_news_company,media_news_company,M,70,Activities of head offices; management consultancy activities,services,0.38749563694000244
+mass_media,media_news_website,media_news_website,J,60,Programming and broadcasting activities,services,0.3848179578781128
+mass_media,media_restoration_service,media_restoration_service,C,18,Printing and reproduction of recorded media,manufacturing,0.36254817247390747
+mass_media,treatrical_productions,treatrical_productions,C,31,Manufacture of furniture,manufacturing,0.31515657901763916
+home_service,home_service,home_service,S,96,Other personal service activities,services,0.5185146927833557
+home_service,ceiling_and_roofing_repair_and_service,ceiling_and_roofing_repair_and_service,S,95,Repair of computers and personal and household goods,services,0.48472532629966736
+home_service,chimney_service,chimney_service,S,96,Other personal service activities,services,0.3935025632381439
+home_service,contractor,contractor,F,41,Construction of buildings,manufacturing,0.4271876811981201
+home_service,damage_restoration,damage_restoration,S,95,Repair of computers and personal and household goods,services,0.34448057413101196
+home_service,artificial_turf,artificial_turf,R,93,Sports activities and amusement and recreation activities,services,0.2963462471961975
+home_service,bathroom_remodeling,bathroom_remodeling,M,71,Architectural and engineering activities; technical testing and analysis,services,0.30701249837875366
+home_service,bathtub_and_sink_repairs,bathtub_and_sink_repairs,S,95,Repair of computers and personal and household goods,services,0.32019150257110596
+home_service,cabinet_sales_service,cabinet_sales_service,C,31,Manufacture of furniture,manufacturing,0.4761282801628113
+home_service,carpenter,carpenter,F,41,Construction of buildings,manufacturing,0.3046609163284302
+home_service,carpet_cleaning,carpet_cleaning,S,96,Other personal service activities,services,0.33481571078300476
+home_service,carpet_installation,carpet_installation,C,31,Manufacture of furniture,manufacturing,0.22312794625759125
+home_service,childproofing,childproofing,N,80,Security and investigation activities,services,0.3027293384075165
+home_service,closet_remodeling,closet_remodeling,C,31,Manufacture of furniture,manufacturing,0.26597774028778076
+home_service,countertop_installation,countertop_installation,C,33,Repair and installation of machinery and equipment,manufacturing,0.1561245322227478
+home_service,deck_and_railing_sales_service,deck_and_railing_sales_service,N,81,Services to buildings and landscape activities,services,0.4062845706939697
+home_service,demolition_service,demolition_service,F,43,Specialized construction activities,manufacturing,0.5030149817466736
+home_service,door_sales_service,door_sales_service,S,95,Repair of computers and personal and household goods,services,0.4116727113723755
+home_service,drywall_services,drywall_services,N,81,Services to buildings and landscape activities,services,0.3347262144088745
+home_service,electrician,electrician,C,27,Manufacture of electrical equipment,manufacturing,0.4460383653640747
+home_service,excavation_service,excavation_service,F,43,Specialized construction activities,manufacturing,0.5053278207778931
+home_service,exterior_design,exterior_design,M,71,Architectural and engineering activities; technical testing and analysis,services,0.41204768419265747
+home_service,fence_and_gate_sales_service,fence_and_gate_sales_service,N,81,Services to buildings and landscape activities,services,0.39952272176742554
+home_service,fire_protection_service,fire_protection_service,N,80,Security and investigation activities,services,0.45394498109817505
+home_service,fireplace_service,fireplace_service,N,81,Services to buildings and landscape activities,services,0.32267433404922485
+home_service,firewood,firewood,C,16,"Manufacture of wood and of products of wood and cork, except furniture; manufacture of articles of straw and plaiting materials",manufacturing,0.3666932284832001
+home_service,foundation_repair,foundation_repair,E,39,Remediation activities and other waste management services,manufacturing,0.2999057173728943
+home_service,furniture_assembly,furniture_assembly,C,31,Manufacture of furniture,manufacturing,0.6263566613197327
+home_service,garage_door_service,garage_door_service,N,81,Services to buildings and landscape activities,services,0.29229605197906494
+home_service,glass_and_mirror_sales_service,glass_and_mirror_sales_service,S,95,Repair of computers and personal and household goods,services,0.3104386329650879
+home_service,grout_service,grout_service,N,81,Services to buildings and landscape activities,services,0.3697854280471802
+home_service,gutter_service,gutter_service,N,81,Services to buildings and landscape activities,services,0.43295061588287354
+home_service,handyman,handyman,S,95,Repair of computers and personal and household goods,services,0.41707316040992737
+home_service,holiday_decorating,holiday_decorating,C,31,Manufacture of furniture,manufacturing,0.4697292149066925
+home_service,home_automation,home_automation,C,33,Repair and installation of machinery and equipment,manufacturing,0.30640149116516113
+home_service,home_cleaning,home_cleaning,S,96,Other personal service activities,services,0.5105139017105103
+home_service,home_energy_auditor,home_energy_auditor,D,35,"Electricity, gas, steam and air conditioning supply",manufacturing,0.3658398985862732
+home_service,home_inspector,home_inspector,F,41,Construction of buildings,manufacturing,0.4060189425945282
+home_service,home_network_installation,home_network_installation,J,61,Telecommunications,services,0.1630866527557373
+home_service,home_security,home_security,N,80,Security and investigation activities,services,0.5167624354362488
+home_service,home_window_tinting,home_window_tinting,C,23,Manufacture of other non-metallic mineral products,manufacturing,0.19911283254623413
+home_service,house_sitting,house_sitting,S,96,Other personal service activities,services,0.45768558979034424
+home_service,hvac_services,hvac_services,N,81,Services to buildings and landscape activities,services,0.4259308874607086
+home_service,insulation_installation,insulation_installation,M,71,Architectural and engineering activities; technical testing and analysis,services,0.27749139070510864
+home_service,interior_design,interior_design,C,31,Manufacture of furniture,manufacturing,0.4913618862628937
+home_service,irrigation,irrigation,E,36,"Water collection, treatment and supply",manufacturing,0.5333774089813232
+home_service,key_and_locksmith,key_and_locksmith,N,80,Security and investigation activities,services,0.2723858058452606
+home_service,kitchen_remodeling,kitchen_remodeling,I,56,Food and beverage service activities,services,0.3119417130947113
+home_service,lighting_fixtures_and_equipment,lighting_fixtures_and_equipment,C,27,Manufacture of electrical equipment,manufacturing,0.506176769733429
+home_service,masonry_concrete,masonry_concrete,F,41,Construction of buildings,manufacturing,0.5146927833557129
+home_service,mobile_home_repair,mobile_home_repair,S,95,Repair of computers and personal and household goods,services,0.41931551694869995
+home_service,movers,movers,H,52,Warehousing and support activities for transportation,services,0.3456396758556366
+home_service,packing_services,packing_services,H,52,Warehousing and support activities for transportation,services,0.5393151044845581
+home_service,painting,painting,F,41,Construction of buildings,manufacturing,0.3552769422531128
+home_service,patio_covers,patio_covers,N,81,Services to buildings and landscape activities,services,0.271088182926178
+home_service,plasterer,plasterer,F,41,Construction of buildings,manufacturing,0.38469335436820984
+home_service,pool_and_hot_tub_services,pool_and_hot_tub_services,N,81,Services to buildings and landscape activities,services,0.4450836777687073
+home_service,pool_cleaning,pool_cleaning,E,36,"Water collection, treatment and supply",manufacturing,0.37275242805480957
+home_service,pressure_washing,pressure_washing,B,06,Extraction of crude petroleum and natural gas,manufacturing,0.29392799735069275
+home_service,refinishing_services,refinishing_services,N,81,Services to buildings and landscape activities,services,0.40971803665161133
+home_service,security_systems,security_systems,N,80,Security and investigation activities,services,0.6299351453781128
+home_service,shades_and_blinds,shades_and_blinds,C,31,Manufacture of furniture,manufacturing,0.21967121958732605
+home_service,shutters,shutters,C,18,Printing and reproduction of recorded media,manufacturing,0.248215913772583
+home_service,siding,siding,F,41,Construction of buildings,manufacturing,0.3415154218673706
+home_service,solar_installation,solar_installation,D,35,"Electricity, gas, steam and air conditioning supply",manufacturing,0.2773641049861908
+home_service,solar_panel_cleaning,solar_panel_cleaning,E,38,"Waste collection, treatment and disposal activities; materials recovery",manufacturing,0.23801955580711365
+home_service,structural_engineer,structural_engineer,F,41,Construction of buildings,manufacturing,0.5201907753944397
+home_service,stucco_services,stucco_services,N,81,Services to buildings and landscape activities,services,0.4222562611103058
+home_service,television_service_providers,television_service_providers,J,60,Programming and broadcasting activities,services,0.4821856617927551
+home_service,tiling,tiling,F,41,Construction of buildings,manufacturing,0.42512840032577515
+home_service,wallpaper_installers,wallpaper_installers,C,18,Printing and reproduction of recorded media,manufacturing,0.12110208719968796
+home_service,washer_and_dryer_repair_service,washer_and_dryer_repair_service,S,95,Repair of computers and personal and household goods,services,0.49432554841041565
+home_service,water_heater_installation_repair,water_heater_installation_repair,E,36,"Water collection, treatment and supply",manufacturing,0.2657969295978546
+home_service,water_purification_services,water_purification_services,E,36,"Water collection, treatment and supply",manufacturing,0.6510791778564453
+home_service,waterproofing,waterproofing,E,36,"Water collection, treatment and supply",manufacturing,0.290893018245697
+home_service,window_washing,window_washing,S,95,Repair of computers and personal and household goods,services,0.3447338342666626
+home_service,landscaping,landscaping,N,81,Services to buildings and landscape activities,services,0.5327757596969604
+home_service,plumbing,plumbing,E,37,Sewerage,manufacturing,0.6157767176628113
+home_service,windows_installation,windows_installation,J,62,"Computer programming, consultancy and related activities",services,0.21145746111869812
+professional_services,professional_services,professional_services,S,96,Other personal service activities,services,0.46213698387145996
+professional_services,cleaning_services,cleaning_services,S,96,Other personal service activities,services,0.5613128542900085
+professional_services,construction_services,construction_services,F,43,Specialized construction activities,manufacturing,0.6623794436454773
+professional_services,lawyer,lawyer,M,69,Legal and accounting activities,services,0.2547183334827423
+professional_services,event_planning,event_planning,I,56,Food and beverage service activities,services,0.4022558331489563
+professional_services,funeral_services_and_cemeteries,funeral_services_and_cemeteries,N,81,Services to buildings and landscape activities,services,0.39572498202323914
+professional_services,internet_service_provider,internet_service_provider,J,63,Information service activities,services,0.42432916164398193
+professional_services,it_service_and_computer_repair,it_service_and_computer_repair,S,95,Repair of computers and personal and household goods,services,0.6695100665092468
+professional_services,junk_removal_and_hauling,junk_removal_and_hauling,H,52,Warehousing and support activities for transportation,services,0.4865674376487732
+professional_services,laundry_services,laundry_services,S,96,Other personal service activities,services,0.5927981734275818
+professional_services,legal_services,legal_services,M,69,Legal and accounting activities,services,0.4911256730556488
+professional_services,musical_instrument_services,musical_instrument_services,C,32,Other manufacturing,manufacturing,0.39618462324142456
+professional_services,3d_printing_service,3d_printing_service,C,18,Printing and reproduction of recorded media,manufacturing,0.35839635133743286
+professional_services,acoustical_consultant,acoustical_consultant,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.38635289669036865
+professional_services,adoption_services,adoption_services,Q,87,Residential care activities,services,0.3328278064727783
+professional_services,advertising_agency,advertising_agency,M,73,Advertising and market research,services,0.4535282850265503
+professional_services,copywriting_service,copywriting_service,J,58,Publishing activities,services,0.44951993227005005
+professional_services,internet_marketing_service,internet_marketing_service,J,63,Information service activities,services,0.525879979133606
+professional_services,merchandising_service,merchandising_service,S,96,Other personal service activities,services,0.500546932220459
+professional_services,social_media_agency,social_media_agency,M,73,Advertising and market research,services,0.3262355327606201
+professional_services,after_school_program,after_school_program,P,85,Education,services,0.3888300359249115
+professional_services,bank_equipment_service,bank_equipment_service,K,64,"Financial service activities, except insurance and pension funding",services,0.56797194480896
+professional_services,air_duct_cleaning_service,air_duct_cleaning_service,S,95,Repair of computers and personal and household goods,services,0.3235543370246887
+professional_services,antenna_service,antenna_service,J,60,Programming and broadcasting activities,services,0.4271989166736603
+professional_services,appliance_repair_service,appliance_repair_service,S,95,Repair of computers and personal and household goods,services,0.5157583355903625
+professional_services,appraisal_services,appraisal_services,N,81,Services to buildings and landscape activities,services,0.3510223627090454
+professional_services,architect,architect,F,41,Construction of buildings,manufacturing,0.5278559327125549
+professional_services,architectural_designer,architectural_designer,M,71,Architectural and engineering activities; technical testing and analysis,services,0.513935387134552
+professional_services,art_restoration_service,art_restoration_service,S,95,Repair of computers and personal and household goods,services,0.43405038118362427
+professional_services,awning_supplier,awning_supplier,N,77,Rental and leasing activities,services,0.20696568489074707
+professional_services,bail_bonds_service,bail_bonds_service,K,64,"Financial service activities, except insurance and pension funding",services,0.36454007029533386
+professional_services,bike_repair_maintenance,bike_repair_maintenance,S,95,Repair of computers and personal and household goods,services,0.5512433052062988
+professional_services,billing_services,billing_services,K,64,"Financial service activities, except insurance and pension funding",services,0.4103049337863922
+professional_services,bookbinding,bookbinding,J,58,Publishing activities,services,0.27572864294052124
+professional_services,bookkeeper,bookkeeper,M,69,Legal and accounting activities,services,0.35920634865760803
+professional_services,bus_rentals,bus_rentals,N,77,Rental and leasing activities,services,0.4772031903266907
+professional_services,business_consulting,business_consulting,M,69,Legal and accounting activities,services,0.49208036065101624
+professional_services,calligraphy,calligraphy,R,90,"Creative, arts and entertainment activities",services,0.25021666288375854
+professional_services,car_broker,car_broker,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.4820480942726135
+professional_services,career_counseling,career_counseling,N,78,Employment activities,services,0.283215194940567
+professional_services,carpet_dyeing,carpet_dyeing,C,13,Manufacture of textiles,manufacturing,0.3860563635826111
+professional_services,cemeteries,cemeteries,E,37,Sewerage,manufacturing,0.3757186532020569
+professional_services,certification_agency,certification_agency,M,69,Legal and accounting activities,services,0.3565598130226135
+professional_services,child_care_and_day_care,child_care_and_day_care,P,85,Education,services,0.5138712525367737
+professional_services,clock_repair_service,clock_repair_service,S,95,Repair of computers and personal and household goods,services,0.38483673334121704
+professional_services,commercial_printer,commercial_printer,C,18,Printing and reproduction of recorded media,manufacturing,0.5062410831451416
+professional_services,commercial_refrigeration,commercial_refrigeration,G,46,"Wholesale trade, except of motor vehicles and motorcycles",services,0.3290119767189026
+professional_services,commissioned_artist,commissioned_artist,R,90,"Creative, arts and entertainment activities",services,0.23926807940006256
+professional_services,community_book_boxes,community_book_boxes,J,58,Publishing activities,services,0.29900500178337097
+professional_services,community_gardens,community_gardens,N,81,Services to buildings and landscape activities,services,0.4497227668762207
+professional_services,computer_hardware_company,computer_hardware_company,C,26,"Manufacture of computer, electronic and optical products",manufacturing,0.46806296706199646
+professional_services,courier_and_delivery_services,courier_and_delivery_services,H,53,Postal and courier activities,services,0.6882703304290771
+professional_services,crane_services,crane_services,C,33,Repair and installation of machinery and equipment,manufacturing,0.43480485677719116
+professional_services,customs_broker,customs_broker,G,46,"Wholesale trade, except of motor vehicles and motorcycles",services,0.47223836183547974
+professional_services,delegated_driver_service,delegated_driver_service,H,52,Warehousing and support activities for transportation,services,0.23581987619400024
+professional_services,diamond_dealer,diamond_dealer,C,32,Other manufacturing,manufacturing,0.3552844822406769
+professional_services,digitizing_services,digitizing_services,C,18,Printing and reproduction of recorded media,manufacturing,0.37154561281204224
+professional_services,donation_center,donation_center,H,52,Warehousing and support activities for transportation,services,0.2621607184410095
+professional_services,duplication_services,duplication_services,C,18,Printing and reproduction of recorded media,manufacturing,0.2624337077140808
+professional_services,e_commerce_service,e_commerce_service,J,63,Information service activities,services,0.4414815902709961
+professional_services,editorial_services,editorial_services,J,58,Publishing activities,services,0.490151584148407
+professional_services,elder_care_planning,elder_care_planning,Q,87,Residential care activities,services,0.4768507480621338
+professional_services,electrical_consultant,electrical_consultant,C,27,Manufacture of electrical equipment,manufacturing,0.4539942741394043
+professional_services,electronics_repair_shop,electronics_repair_shop,S,95,Repair of computers and personal and household goods,services,0.5921800136566162
+professional_services,elevator_service,elevator_service,S,96,Other personal service activities,services,0.38834190368652344
+professional_services,emergency_service,emergency_service,S,95,Repair of computers and personal and household goods,services,0.46046513319015503
+professional_services,employment_agencies,employment_agencies,N,78,Employment activities,services,0.5837000608444214
+professional_services,engraving,engraving,C,32,Other manufacturing,manufacturing,0.39312946796417236
+professional_services,environmental_abatement_services,environmental_abatement_services,N,81,Services to buildings and landscape activities,services,0.527971625328064
+professional_services,environmental_testing,environmental_testing,E,39,Remediation activities and other waste management services,manufacturing,0.38769519329071045
+professional_services,farm_equipment_repair_service,farm_equipment_repair_service,C,33,Repair and installation of machinery and equipment,manufacturing,0.614342451095581
+professional_services,feng_shui,feng_shui,C,31,Manufacture of furniture,manufacturing,0.32177430391311646
+professional_services,fingerprinting_service,fingerprinting_service,N,80,Security and investigation activities,services,0.29229840636253357
+professional_services,food_and_beverage_consultant,food_and_beverage_consultant,I,56,Food and beverage service activities,services,0.4853384792804718
+professional_services,forestry_service,forestry_service,A,02,Forestry and logging,agriculture,0.5713838934898376
+professional_services,fortune_telling_service,fortune_telling_service,R,92,Gambling and betting activities,services,0.2884489595890045
+professional_services,furniture_rental_service,furniture_rental_service,C,31,Manufacture of furniture,manufacturing,0.5703367590904236
+professional_services,furniture_repair,furniture_repair,C,31,Manufacture of furniture,manufacturing,0.596782922744751
+professional_services,furniture_reupholstery,furniture_reupholstery,C,31,Manufacture of furniture,manufacturing,0.5682626962661743
+professional_services,genealogists,genealogists,R,91,"Libraries, archives, museums and other cultural activities",services,0.39129894971847534
+professional_services,generator_installation_repair,generator_installation_repair,C,33,Repair and installation of machinery and equipment,manufacturing,0.38029199838638306
+professional_services,goldsmith,goldsmith,E,37,Sewerage,manufacturing,0.20403240621089935
+professional_services,graphic_designer,graphic_designer,M,74,"Other professional, scientific and technical activities",services,0.27603793144226074
+professional_services,gunsmith,gunsmith,S,95,Repair of computers and personal and household goods,services,0.24559719860553741
+professional_services,hazardous_waste_disposal,hazardous_waste_disposal,E,39,Remediation activities and other waste management services,manufacturing,0.6262050867080688
+professional_services,hydraulic_repair_service,hydraulic_repair_service,C,33,Repair and installation of machinery and equipment,manufacturing,0.4982941448688507
+professional_services,hydro_jetting,hydro_jetting,E,36,"Water collection, treatment and supply",manufacturing,0.3606931269168854
+professional_services,ice_supplier,ice_supplier,E,36,"Water collection, treatment and supply",manufacturing,0.31114161014556885
+professional_services,immigration_assistance_services,immigration_assistance_services,U,99,Activities of extraterritorial organizations and bodies,services,0.3978981077671051
+professional_services,indoor_landscaping,indoor_landscaping,N,81,Services to buildings and landscape activities,services,0.49433571100234985
+professional_services,jewelry_repair_service,jewelry_repair_service,S,95,Repair of computers and personal and household goods,services,0.48154741525650024
+professional_services,junkyard,junkyard,E,37,Sewerage,manufacturing,0.3408656716346741
+professional_services,knife_sharpening,knife_sharpening,C,25,"Manufacture of fabricated metal products, except machinery and equipment",manufacturing,0.21474149823188782
+professional_services,laboratory,laboratory,C,20,Manufacture of chemicals and chemical products,manufacturing,0.3072947859764099
+professional_services,lawn_mower_repair_service,lawn_mower_repair_service,S,95,Repair of computers and personal and household goods,services,0.39789724349975586
+professional_services,life_coach,life_coach,R,90,"Creative, arts and entertainment activities",services,0.20247729122638702
+professional_services,lottery_ticket,lottery_ticket,R,92,Gambling and betting activities,services,0.4019095301628113
+professional_services,machine_and_tool_rentals,machine_and_tool_rentals,S,95,Repair of computers and personal and household goods,services,0.5166119337081909
+professional_services,machine_shop,machine_shop,C,33,Repair and installation of machinery and equipment,manufacturing,0.4830300807952881
+professional_services,mailbox_center,mailbox_center,H,53,Postal and courier activities,services,0.3137097954750061
+professional_services,marketing_agency,marketing_agency,M,73,Advertising and market research,services,0.471358060836792
+professional_services,matchmaker,matchmaker,R,92,Gambling and betting activities,services,0.18508002161979675
+professional_services,mediator,mediator,U,99,Activities of extraterritorial organizations and bodies,services,0.19064223766326904
+professional_services,metal_detector_services,metal_detector_services,N,80,Security and investigation activities,services,0.44155675172805786
+professional_services,misting_system_services,misting_system_services,N,81,Services to buildings and landscape activities,services,0.33667388558387756
+professional_services,mobility_equipment_services,mobility_equipment_services,H,52,Warehousing and support activities for transportation,services,0.5402766466140747
+professional_services,mooring_service,mooring_service,H,52,Warehousing and support activities for transportation,services,0.3930414319038391
+professional_services,music_production_services,music_production_services,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.527823269367218
+professional_services,nanny_services,nanny_services,S,96,Other personal service activities,services,0.47616422176361084
+professional_services,notary_public,notary_public,O,84,Public administration and defence; compulsory social security,services,0.2037392109632492
+professional_services,package_locker,package_locker,H,52,Warehousing and support activities for transportation,services,0.3094490170478821
+professional_services,packaging_contractors_and_service,packaging_contractors_and_service,H,52,Warehousing and support activities for transportation,services,0.45453718304634094
+professional_services,patent_law,patent_law,C,26,"Manufacture of computer, electronic and optical products",manufacturing,0.32568228244781494
+professional_services,payroll_services,payroll_services,M,69,Legal and accounting activities,services,0.41671499609947205
+professional_services,personal_assistant,personal_assistant,S,96,Other personal service activities,services,0.3780326247215271
+professional_services,pest_control_service,pest_control_service,M,75,Veterinary activities,services,0.3899095952510834
+professional_services,powder_coating_service,powder_coating_service,C,23,Manufacture of other non-metallic mineral products,manufacturing,0.3979428708553314
+professional_services,printing_services,printing_services,C,18,Printing and reproduction of recorded media,manufacturing,0.58319491147995
+professional_services,private_investigation,private_investigation,N,80,Security and investigation activities,services,0.5681652426719666
+professional_services,product_design,product_design,C,31,Manufacture of furniture,manufacturing,0.4289117753505707
+professional_services,propane_supplier,propane_supplier,C,19,Manufacture of coke and refined petroleum products,manufacturing,0.29173916578292847
+professional_services,public_adjuster,public_adjuster,S,95,Repair of computers and personal and household goods,services,0.27439403533935547
+professional_services,public_relations,public_relations,M,73,Advertising and market research,services,0.4999501705169678
+professional_services,record_label,record_label,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.3417225480079651
+professional_services,recording_and_rehearsal_studio,recording_and_rehearsal_studio,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.39853721857070923
+professional_services,recycling_center,recycling_center,E,39,Remediation activities and other waste management services,manufacturing,0.4853021800518036
+professional_services,sandblasting_service,sandblasting_service,B,09,Mining support service activities,manufacturing,0.4074474573135376
+professional_services,screen_printing_t_shirt_printing,screen_printing_t_shirt_printing,C,18,Printing and reproduction of recorded media,manufacturing,0.3254072666168213
+professional_services,security_services,security_services,N,80,Security and investigation activities,services,0.6949201822280884
+professional_services,septic_services,septic_services,E,37,Sewerage,manufacturing,0.633378803730011
+professional_services,shipping_center,shipping_center,H,52,Warehousing and support activities for transportation,services,0.4743691682815552
+professional_services,shoe_repair,shoe_repair,S,95,Repair of computers and personal and household goods,services,0.4224155843257904
+professional_services,shoe_shining_service,shoe_shining_service,S,96,Other personal service activities,services,0.4872174859046936
+professional_services,shredding_services,shredding_services,E,39,Remediation activities and other waste management services,manufacturing,0.3275647759437561
+professional_services,sign_making,sign_making,C,18,Printing and reproduction of recorded media,manufacturing,0.2282101809978485
+professional_services,snow_removal_service,snow_removal_service,N,81,Services to buildings and landscape activities,services,0.3579069972038269
+professional_services,snuggle_service,snuggle_service,S,96,Other personal service activities,services,0.3190850615501404
+professional_services,software_development,software_development,J,62,"Computer programming, consultancy and related activities",services,0.487392783164978
+professional_services,talent_agency,talent_agency,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.3179541826248169
+professional_services,taxidermist,taxidermist,M,75,Veterinary activities,services,0.29355621337890625
+professional_services,telephone_services,telephone_services,J,61,Telecommunications,services,0.5458958745002747
+professional_services,tenant_and_eviction_law,tenant_and_eviction_law,N,77,Rental and leasing activities,services,0.37374863028526306
+professional_services,tent_house_supplier,tent_house_supplier,I,55,Accommodation,services,0.4094547629356384
+professional_services,translation_services,translation_services,J,63,Information service activities,services,0.2998613715171814
+professional_services,tv_mounting,tv_mounting,J,60,Programming and broadcasting activities,services,0.2660408020019531
+professional_services,typing_services,typing_services,J,63,Information service activities,services,0.2959027886390686
+professional_services,video_film_production,video_film_production,J,59,"Motion picture, video and television programme production, sound recording and music publishing activities",services,0.5246898531913757
+professional_services,watch_repair_service,watch_repair_service,S,95,Repair of computers and personal and household goods,services,0.4468526840209961
+professional_services,water_delivery,water_delivery,E,36,"Water collection, treatment and supply",manufacturing,0.4801810681819916
+professional_services,web_designer,web_designer,J,63,Information service activities,services,0.33448317646980286
+professional_services,well_drilling,well_drilling,B,09,Mining support service activities,manufacturing,0.41155222058296204
+professional_services,wildlife_control,wildlife_control,M,75,Veterinary activities,services,0.47912243008613586
+professional_services,writing_service,writing_service,C,18,Printing and reproduction of recorded media,manufacturing,0.3980293273925781
+professional_services,storage_facility,storage_facility,H,52,Warehousing and support activities for transportation,services,0.46801725029945374
+professional_services,sewing_and_alterations,sewing_and_alterations,C,13,Manufacture of textiles,manufacturing,0.5336840152740479
+professional_services,utility_service,utility_service,N,81,Services to buildings and landscape activities,services,0.5153036713600159
+structure_and_geography,structure_and_geography,structure_and_geography,F,41,Construction of buildings,manufacturing,0.4484577775001526
+structure_and_geography,bridge,bridge,R,92,Gambling and betting activities,services,0.31356826424598694
+structure_and_geography,canal,canal,E,37,Sewerage,manufacturing,0.38967424631118774
+structure_and_geography,dam,dam,E,37,Sewerage,manufacturing,0.23221537470817566
+structure_and_geography,desert,desert,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.2693467438220978
+structure_and_geography,forest,forest,A,02,Forestry and logging,agriculture,0.38699162006378174
+structure_and_geography,geologic_formation,geologic_formation,B,08,Other mining and quarrying,manufacturing,0.4302840828895569
+structure_and_geography,island,island,E,37,Sewerage,manufacturing,0.16979703307151794
+structure_and_geography,mountain,mountain,E,37,Sewerage,manufacturing,0.22210225462913513
+structure_and_geography,natural_hot_springs,natural_hot_springs,E,36,"Water collection, treatment and supply",manufacturing,0.31352826952934265
+structure_and_geography,nature_reserve,nature_reserve,R,91,"Libraries, archives, museums and other cultural activities",services,0.43650007247924805
+structure_and_geography,pier,pier,E,37,Sewerage,manufacturing,0.3129567503929138
+structure_and_geography,public_plaza,public_plaza,N,81,Services to buildings and landscape activities,services,0.33236163854599
+structure_and_geography,quay,quay,E,37,Sewerage,manufacturing,0.25442683696746826
+structure_and_geography,river,river,E,37,Sewerage,manufacturing,0.3927517235279083
+structure_and_geography,skyscraper,skyscraper,F,41,Construction of buildings,manufacturing,0.42910557985305786
+structure_and_geography,tower,tower,F,41,Construction of buildings,manufacturing,0.3616430163383484
+structure_and_geography,weir,weir,E,37,Sewerage,manufacturing,0.26986533403396606
+construction,greenfield,,E,37,Sewerage,manufacturing,0.2701800465583801
+education,college,,P,85,Education,services,0.25680577754974365
+park,village_green,,N,81,Services to buildings and landscape activities,services,0.2905711531639099
+medical,doctors,,Q,86,Human health activities,services,0.38164013624191284
+protected,national_park,,R,91,"Libraries, archives, museums and other cultural activities",services,0.3500414490699768
+military,naval_base,,R,91,"Libraries, archives, museums and other cultural activities",services,0.24285277724266052
+military,obstacle_course,,R,93,Sports activities and amusement and recreation activities,services,0.4162963926792145
+golf,golf_course,,R,93,Sports activities and amusement and recreation activities,services,0.40875500440597534
+golf,bunker,,E,37,Sewerage,manufacturing,0.24182137846946716
+golf,tee,,E,37,Sewerage,manufacturing,0.1574113368988037
+military,trench,,E,37,Sewerage,manufacturing,0.31903332471847534
+managed,grass,,E,37,Sewerage,manufacturing,0.278746634721756
+agriculture,farmland,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.5069692134857178
+developed,industrial,,C,28,Manufacture of machinery and equipment n.e.c.,manufacturing,0.5374467372894287
+recreation,recreation_ground,,R,93,Sports activities and amusement and recreation activities,services,0.49841707944869995
+education,university,,P,85,Education,services,0.27771979570388794
+religious,religious,,R,92,Gambling and betting activities,services,0.20207783579826355
+golf,fairway,,R,92,Gambling and betting activities,services,0.2808528542518616
+golf,lateral_water_hazard,,E,37,Sewerage,manufacturing,0.30407029390335083
+golf,water_hazard,,E,37,Sewerage,manufacturing,0.3883231282234192
+developed,commercial,,M,73,Advertising and market research,services,0.340718150138855
+cemetery,cemetery,,E,37,Sewerage,manufacturing,0.33007580041885376
+horticulture,orchard,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.2606354355812073
+medical,clinic,,Q,86,Human health activities,services,0.4100830554962158
+cemetery,grave_yard,,E,37,Sewerage,manufacturing,0.38119810819625854
+horticulture,allotments,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.32712554931640625
+protected,species_management_area,,M,75,Veterinary activities,services,0.4208875298500061
+resource_extraction,salt_pond,,E,37,Sewerage,manufacturing,0.3488929867744446
+transportation,traffic_island,,E,37,Sewerage,manufacturing,0.2848956286907196
+horticulture,flowerbed,,E,37,Sewerage,manufacturing,0.25307944416999817
+golf,rough,,E,37,Sewerage,manufacturing,0.16818201541900635
+residential,static_caravan,,H,51,Air transport,services,0.29259979724884033
+residential,residential,,L,68,Real estate activities,services,0.4353554844856262
+recreation,pitch,,R,92,Gambling and betting activities,services,0.22182239592075348
+horticulture,garden,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.3514230251312256
+developed,works,,S,95,Repair of computers and personal and household goods,services,0.1727394014596939
+campground,camp_site,,I,55,Accommodation,services,0.37878844141960144
+pedestrian,pedestrian,,S,96,Other personal service activities,services,0.1930738389492035
+horticulture,vineyard,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.23124490678310394
+residential,garages,,N,77,Rental and leasing activities,services,0.3411577641963959
+golf,green,,E,37,Sewerage,manufacturing,0.22691629827022552
+protected,protected,,N,80,Security and investigation activities,services,0.25881266593933105
+transportation,highway,,H,49,Land transport and transport via pipelines,services,0.2583826780319214
+agriculture,animal_keeping,,M,75,Veterinary activities,services,0.47922483086586
+recreation,track,,R,92,Gambling and betting activities,services,0.236031174659729
+agriculture,farmyard,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.3571399748325348
+resource_extraction,quarry,,B,08,Other mining and quarrying,manufacturing,0.41616329550743103
+protected,protected_landscape_seascape,,R,91,"Libraries, archives, museums and other cultural activities",services,0.39245015382766724
+aquaculture,aquaculture,,A,03,Fishing and aquaculture,agriculture,0.5412371754646301
+protected,aboriginal_land,,R,91,"Libraries, archives, museums and other cultural activities",services,0.3400766849517822
+protected,wilderness_area,,A,02,Forestry and logging,agriculture,0.37142109870910645
+military,airfield,,H,51,Air transport,services,0.3191456198692322
+winter_sports,winter_sports,,R,93,Sports activities and amusement and recreation activities,services,0.39700427651405334
+winter_sports,playground,,R,93,Sports activities and amusement and recreation activities,services,0.333804726600647
+protected,environmental,,R,90,"Creative, arts and entertainment activities",services,0.36235934495925903
+construction,construction,,F,41,Construction of buildings,manufacturing,0.7133322954177856
+military,barracks,,F,41,Construction of buildings,manufacturing,0.3427973985671997
+resource_extraction,logging,,A,02,Forestry and logging,agriculture,0.35724586248397827
+protected,strict_nature_reserve,,R,91,"Libraries, archives, museums and other cultural activities",services,0.4084550440311432
+recreation,stadium,,R,93,Sports activities and amusement and recreation activities,services,0.2922188639640808
+military,military,,N,80,Security and investigation activities,services,0.31432822346687317
+protected,natural_monument,,R,91,"Libraries, archives, museums and other cultural activities",services,0.5113258361816406
+landfill,landfill,,E,37,Sewerage,manufacturing,0.5153214335441589
+military,range,,C,31,Manufacture of furniture,manufacturing,0.12991705536842346
+horticulture,plant_nursery,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.5165041089057922
+military,base,,E,37,Sewerage,manufacturing,0.21818098425865173
+golf,driving_range,,G,45,Wholesale and retail trade and repair of motor vehicles and motorcycles,services,0.2894074022769928
+education,schoolyard,,E,37,Sewerage,manufacturing,0.2567954957485199
+resource_extraction,peat_cutting,,B,08,Other mining and quarrying,manufacturing,0.4000841975212097
+military,nuclear_explosion_site,,E,39,Remediation activities and other waste management services,manufacturing,0.31388378143310547
+developed,brownfield,,E,37,Sewerage,manufacturing,0.2308652400970459
+park,dog_park,,R,91,"Libraries, archives, museums and other cultural activities",services,0.3089556396007538
+agriculture,meadow,,N,81,Services to buildings and landscape activities,services,0.22978751361370087
+entertainment,theme_park,,R,93,Sports activities and amusement and recreation activities,services,0.4100559651851654
+military,training_area,,R,93,Sports activities and amusement and recreation activities,services,0.3623041808605194
+horticulture,greenhouse_horticulture,,A,01,"Crop and animal production, hunting and related service activities",agriculture,0.4572475850582123
+recreation,beach_resort,,N,79,"Travel agency, tour operator, reservation service and related activities",services,0.28718453645706177
+developed,institutional,,S,94,Activities of membership organizations,services,0.3036586046218872
+protected,state_park,,R,91,"Libraries, archives, museums and other cultural activities",services,0.3135208785533905
+military,danger_area,,N,80,Security and investigation activities,services,0.3369763493537903

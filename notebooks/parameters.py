@@ -11,8 +11,8 @@ year = 2015
 # https://www.pythoncheatsheet.org/cheatsheet/file-directory-path
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 # https://realpython.com/python-pathlib/
-print(Path(os.getcwd()).resolve())
 
+# print(Path(os.getcwd()).resolve())
 
 # 
 missing_frac = 0.5
@@ -43,10 +43,27 @@ agg_res = 5
 light_lm = "all-MiniLM-L6-v2"
 full_lm = "all-mpnet-base-v2"
 
+# choose a model : 
+selected_model = full_lm
+
 #####
 overture_places_landuses_filename = "datasets/overture/processed/places_landuses.parquet"
 
+place_types_filename = f"/data/place_types_isic_{selected_model}.csv"
+
+overture_db_filename = "datasets/overture/overture_db.duckdb"
 
 ## paths
 
 # project_repo = lib
+
+
+# DOSE types support 
+dose_types = {"services" : "G-U"
+              ,"manufacturing" : "B-F"
+              ,"agriculture" : "A"}
+
+
+# boundaries 
+
+ghsl_bounds = {"R8_C19" : [-.008,9.1,9.992,19.1]}
