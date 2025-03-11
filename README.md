@@ -26,12 +26,19 @@ Reference global boundary data sets that are widely used as the standard country
 * [World development indicator (WDI)](https://github.com/ischlo/global-econ-data/blob/main/notebooks/wdi_vis.ipynb)
 * [DOSE](https://github.com/ischlo/global-econ-data/blob/main/notebooks/dose_vis.ipynb)
 
-## Filling gaps
+## Filling economic output gaps
 
 A combination of data sets has been done in order to get a global economic activity data set expressed as GDP/GRP produced at the finest spatial resolution available. The DOSE data set at ADMIN_1 resolution has been combined with WDI at ADMIN_0 resolution for 3 sectors: *manufacturing*, *services*, *agriculture*. The methodology is in the notebook: 
 
 * [Combined DOSE-WDI methodology](https://github.com/ischlo/global-econ-data/blob/main/notebooks/missing_countries.ipynb)
 * [Combined data adding geometries](https://github.com/ischlo/global-econ-data/blob/main/notebooks/missing_countries_geo.ipynb)
+
+## Categorisation of Points of Interest (POIs) 
+
+Standardising categories into ISIC codes.
+
+* [ISIC classification](https://github.com/ischlo/global-econ-data/blob/main/notebooks/isic.ipynb)
+
 
 ## Running locally
 
