@@ -1,4 +1,4 @@
-<!-- https://ischlo.github.io/global-econ-data/notebooks/ -->
+<!-- https://ischlo.github.io/global-econ-data/blob/main/notebooks/ -->
 
 # Global economic activity and related data sets
 
@@ -8,7 +8,7 @@ Each link leads to the notebook for the corresponding data set / industry. Data 
 ## Data sources 
 And sector coverage
 
-* [Global Econ Layers sources](https://ischlo.github.io/global-econ-data/notebooks/table/global-spatial-economics-datasets-public(datasets).csv)
+* [Global Econ Layers sources](https://github.com/ischlo/global-econ-data/blob/main/table/global-spatial-economics-datasets-public(datasets).csv)
 
 ## Covered topics
 The covered topics and corresponding data sets are :
@@ -20,9 +20,9 @@ Reference global boundary data sets that are widely used as the standard country
 
 ### Agriculture
 
-* [MAPSPAM](https://ischlo.github.io/global-econ-data/notebooks/mapspam.ipynb)
-* [AgGDP](https://ischlo.github.io/global-econ-data/notebooks/agriculture_gdp.ipynb)
-* [GLW](https://ischlo.github.io/global-econ-data/notebooks/cattle.ipynb)
+* [MAPSPAM](https://ischlo.github.io/global-econ-data/blob/main/notebooks/mapspam.ipynb)
+* [AgGDP](https://ischlo.github.io/global-econ-data/blob/main/notebooks/agriculture_gdp.ipynb)
+* [GLW](https://ischlo.github.io/global-econ-data/blob/main/notebooks/cattle.ipynb)
   
 ### Industry
 
@@ -38,13 +38,13 @@ Reference global boundary data sets that are widely used as the standard country
 
 * [World development indicator (WDI)](https://github.com/ischlo/global-econ-data/blob/main/notebooks/wdi_vis.ipynb)
 * [DOSE](https://github.com/ischlo/global-econ-data/blob/main/notebooks/dose_vis.ipynb)
-* [Global 3 sectors](https://ischlo.github.io/global-econ-data/notebooks/GDP_3_sectors_global.ipynb)
+* [Global 3 sectors](https://ischlo.github.io/global-econ-data/blob/main/notebooks/GDP_3_sectors_global.ipynb)
 
 ### Infrastructure
 
 #### Global Human Settlement Layer
 
-* [MSZ](https://ischlo.github.io/global-econ-data/notebooks/ghsl_msz_vis.ipynb)
+* [MSZ](https://ischlo.github.io/global-econ-data/blob/main/notebooks/ghsl_msz_vis.ipynb)
 
 ## Filling economic output gaps
 
@@ -56,11 +56,11 @@ A combination of data sets has been done in order to get a global economic activ
 ## Points of interest (POIs)
 Data from Overture/OpenStreetMap and Foursqaure
 
-* [Overture POIs preprocessing](https://ischlo.github.io/global-econ-data/notebooks/overture_data.ipynb)
-* [Overture POIs](https://ischlo.github.io/global-econ-data/notebooks/overture_data_vis.ipynb)
-* [Foursquare](https://ischlo.github.io/global-econ-data/notebooks/foursquare.ipynb)
-* [Comparison of foursqure and OSM](https://ischlo.github.io/global-econ-data/notebooks/overture_vs_foursquare.ipynb)
-* [Comparison of OSM and GHSL](https://ischlo.github.io/global-econ-data/notebooks/ghsl_vs_pois.ipynb)
+* [Overture POIs preprocessing](https://ischlo.github.io/global-econ-data/blob/main/notebooks/overture_data.ipynb)
+* [Overture POIs](https://ischlo.github.io/global-econ-data/blob/main/notebooks/overture_data_vis.ipynb)
+* [Foursquare](https://ischlo.github.io/global-econ-data/blob/main/notebooks/foursquare.ipynb)
+* [Comparison of foursqure and OSM](https://ischlo.github.io/global-econ-data/blob/main/notebooks/overture_vs_foursquare.ipynb)
+* [Comparison of OSM and GHSL](https://ischlo.github.io/global-econ-data/blob/main/notebooks/ghsl_vs_pois.ipynb)
 
 ## Categorisation of Points of Interest (POIs) 
 
