@@ -14,7 +14,6 @@ year = 2015
 # https://www.pythoncheatsheet.org/cheatsheet/file-directory-path
 # https://medium.com/@ageitgey/python-3-quick-tip-the-easy-way-to-deal-with-file-paths-on-windows-mac-and-linux-11a072b58d5f
 # https://realpython.com/python-pathlib/
-
 # print(Path(os.getcwd()).resolve())
 
 # PYDECK options
@@ -37,6 +36,10 @@ cat_pal = pypal.load_cmap(name=cat_pal_name)
 # MSZ cat pal
 cat_palette = "Classic_10"
 msz_pal = pypal.load_cmap(cat_palette,reverse=True)
+
+# Diverging palette
+div_palette_name = "miami2"
+div_pal = pypal.load_cmap(div_palette_name,reverse=False)
 
 # a global viewstate for pydeck maps
 view_state_glob = ViewState(

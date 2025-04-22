@@ -49,3 +49,13 @@ wget https://datacatalogfiles.worldbank.org/ddh-published-v2/0061507/3/DR0090772
 wget https://datacatalogfiles.worldbank.org/ddh-published-v2/0061507/3/DR0090773/aggdp2010_forest_prior.tif --directory-prefix=AgGDP/raw
 
 wget https://datacatalogfiles.worldbank.org/ddh-published-v2/0061507/3/DR0089195/aggdp2010.tif --directory-prefix=AgGDP/raw
+
+
+## Climatrace 
+
+mkdir climatrace
+
+wget https://downloads.climatetrace.org/v4.0.0/sector_packages/co2/transportation.zip --directory-prefix=climatrace
+
+# pipe the unzipping
+bsdtar -x climatrace/*.zip

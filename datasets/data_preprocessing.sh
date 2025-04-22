@@ -65,3 +65,11 @@ rastapar AgGDP/raw/aggdp2010_crop_prior.tif -o_c=EPSG:4326 -o_p=AgGDP/processed/
 rastapar AgGDP/raw/aggdp2010_fish_prior.tif -o_c=EPSG:4326 -o_p=AgGDP/processed/fish
 rastapar AgGDP/raw/aggdp2010_ls_prior.tif -o_c=EPSG:4326 -o_p=AgGDP/processed/ls_prior
 rastapar AgGDP/raw/aggdp2010.tif -o_c=EPSG:4326 -o_p=AgGDP/processed/agggdp
+
+
+
+# GVA Thailand
+
+# rastapar local_data/gva/raw/gva_ag_3ss.tif -o_c=EPSG:4326 -o_p=local_data/gva/processed/gva_thai_agri
+# rastapar local_data/gva/raw/gva_man_3ss.tif -o_c=EPSG:4326 -o_p=local_data/gva/processed/gva_thai_man
+# rastapar local_data/gva/raw/gva_serv_3ss.tif -o_c=EPSG:4326 -o_p=local_data/gva/processed/gva_thai_serv
